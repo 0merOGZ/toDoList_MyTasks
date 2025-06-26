@@ -1,0 +1,913 @@
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.csproj.AssemblyReference.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.AssemblyInfoInputs.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.AssemblyInfo.cs
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.csproj.CoreCompileInputs.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.RazorAssemblyInfo.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.RazorAssemblyInfo.cs
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\appsettings.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tod.staticwebassets.runtime.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tod.staticwebassets.endpoints.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tod.exe
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tod.deps.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tod.runtimeconfig.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tod.pdb
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Humanizer.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\scopedcss\bundle\tod.styles.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\scopedcss\projectbundle\tod.bundle.scp.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\2oktie9eet-xtxxf3hu2r.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\bfqo7pbb5j-bqjiyaj88i.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\di7kkygcfx-c2jlpeoesf.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\qhscpo9ku7-erw9l3u2r3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\rnw71mbbgi-aexeepp0ev.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\zqgkn00w01-d7shbmvgxk.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\ozrhwy19s5-ausgxo2sd3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\05ea9sd8sd-k8d9w2qqmf.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\eiidfguyar-cosvhxvwiu.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\7s0krojket-ub07r2b239.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\asg5cnziy7-fvhpjtyr6v.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\2ajv7tjkxn-b7pk76d08c.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\hj8pui8pv4-fsbi9cje9m.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\no8iveeq9m-rzd6atqjts.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\kn97a5ii55-ee0r1s7dh0.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\eoy5tww5hu-dxx9fxp4il.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\ppqr8wr1mg-jd9uben2k1.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\me4i9lj3uz-khv3u5hwcm.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\06dhxyqvu6-r4e9w2rdcm.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\4nfp4dr6g6-lcd1t2u6c8.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\0pbnvs8g8l-c2oey78nd0.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\32n85hpjfp-tdbxkamptv.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\z0autbqo4a-j5mq2jizvt.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\1mgd27siry-06098lyss8.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\b1p4ndekmj-nvvlpmu67g.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\9kiy79padj-s35ty4nyc5.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\pkk0vrvzwj-pj5nd1wqec.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\btjljqi5f7-46ein0sx1k.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\09flpfk13k-v0zj4ognzu.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\e4zj1kicma-37tfw0ft22.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\p72mxd5oy8-hrwsygsryq.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\sm15lvuoat-pk9g2wxc8p.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\kt4ht5r6f4-ft3s53vfgj.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\jz7yuz28o0-6cfz1n2cew.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\u8w16cthps-6pdc2jztkx.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\025omkewjm-493y06b0oq.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\cf2bgxlw11-iovd86k7lj.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\iv1l3fapnm-vr1egmr9el.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\3w1m4cqbhm-kbrnm935zg.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\srqj8usaji-jj8uyg4cgr.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\2j8a6ubens-y7v9cxd14o.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\bqy7hmcuan-notf2xhcfb.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\o54xo83tn5-h1s4sie4z3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\7azfxu6jv8-63fj8s7r0e.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\a95i8edj29-0j3bgjxly4.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\gfph1cb4k9-47otxtyo56.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\6fnfl0a8l6-4v8eqarkd7.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\qqlm8ifr5x-356vix0kms.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\xh8cpllkhv-83jwlth58m.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\aovmci4rno-mrlpezrjn3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\s25vzeil62-lzl9nlhx6b.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\6oaz9p8c49-ag7o75518u.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\g7k8nllzvp-x0q3zqp4vz.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\wxvy42l6rr-0i3buxo5is.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\ldfwnlvkw4-o1o13a6vjx.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\wop92ew7j8-ttgo8qnofa.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\9mlpwbx803-2z0ns9nrw6.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\izfwqktzmq-muycvpuwrr.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\2ltvpyh29n-87fc7y1x7t.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\a1xk7e5gje-mlv21k5csn.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\pq7ztbaw6e-r9teevq30l.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\imkvptp2kd-r9teevq30l.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.csproj.Up2Date
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\refint\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.pdb
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.genruntimeconfig.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\ref\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\pzk7rj2b99-pziursb570.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\tod.sourcelink.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod\tod\obj\Debug\net9.0\compressed\dfsg4lyq0c-3hf8cappz4.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\appsettings.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tod.staticwebassets.runtime.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tod.staticwebassets.endpoints.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tod.exe
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tod.deps.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tod.runtimeconfig.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tod.pdb
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Humanizer.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.csproj.AssemblyReference.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.AssemblyInfoInputs.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.AssemblyInfo.cs
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.csproj.CoreCompileInputs.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.RazorAssemblyInfo.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.RazorAssemblyInfo.cs
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\scopedcss\bundle\tod.styles.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\scopedcss\projectbundle\tod.bundle.scp.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\dfsg4lyq0c-3hf8cappz4.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\pzk7rj2b99-pziursb570.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\2oktie9eet-fr7q2aak1r.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\bfqo7pbb5j-bqjiyaj88i.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\di7kkygcfx-c2jlpeoesf.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\qhscpo9ku7-erw9l3u2r3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\rnw71mbbgi-aexeepp0ev.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\zqgkn00w01-d7shbmvgxk.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\ozrhwy19s5-ausgxo2sd3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\05ea9sd8sd-k8d9w2qqmf.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\eiidfguyar-cosvhxvwiu.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\7s0krojket-ub07r2b239.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\asg5cnziy7-fvhpjtyr6v.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\2ajv7tjkxn-b7pk76d08c.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\hj8pui8pv4-fsbi9cje9m.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\no8iveeq9m-rzd6atqjts.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\kn97a5ii55-ee0r1s7dh0.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\eoy5tww5hu-dxx9fxp4il.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\ppqr8wr1mg-jd9uben2k1.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\me4i9lj3uz-khv3u5hwcm.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\06dhxyqvu6-r4e9w2rdcm.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\4nfp4dr6g6-lcd1t2u6c8.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\0pbnvs8g8l-c2oey78nd0.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\32n85hpjfp-tdbxkamptv.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\z0autbqo4a-j5mq2jizvt.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\1mgd27siry-06098lyss8.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\b1p4ndekmj-nvvlpmu67g.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\9kiy79padj-s35ty4nyc5.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\pkk0vrvzwj-pj5nd1wqec.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\btjljqi5f7-46ein0sx1k.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\09flpfk13k-v0zj4ognzu.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\e4zj1kicma-37tfw0ft22.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\p72mxd5oy8-hrwsygsryq.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\sm15lvuoat-pk9g2wxc8p.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\kt4ht5r6f4-ft3s53vfgj.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\jz7yuz28o0-6cfz1n2cew.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\u8w16cthps-6pdc2jztkx.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\025omkewjm-493y06b0oq.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\cf2bgxlw11-iovd86k7lj.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\iv1l3fapnm-vr1egmr9el.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\3w1m4cqbhm-kbrnm935zg.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\srqj8usaji-jj8uyg4cgr.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\2j8a6ubens-y7v9cxd14o.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\bqy7hmcuan-notf2xhcfb.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\o54xo83tn5-h1s4sie4z3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\7azfxu6jv8-63fj8s7r0e.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\a95i8edj29-0j3bgjxly4.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\gfph1cb4k9-47otxtyo56.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\6fnfl0a8l6-4v8eqarkd7.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\qqlm8ifr5x-l3n5xuwxn8.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\xh8cpllkhv-ilo7uva0vt.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\aovmci4rno-qlccset4i1.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\s25vzeil62-lzl9nlhx6b.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\6oaz9p8c49-ag7o75518u.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\g7k8nllzvp-xzw0cte36n.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\wxvy42l6rr-0i3buxo5is.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\ldfwnlvkw4-o1o13a6vjx.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\wop92ew7j8-ttgo8qnofa.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\9mlpwbx803-2z0ns9nrw6.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\izfwqktzmq-muycvpuwrr.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\2ltvpyh29n-87fc7y1x7t.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\a1xk7e5gje-jfsiqqwiad.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\pq7ztbaw6e-r9teevq30l.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\compressed\imkvptp2kd-r9teevq30l.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.csproj.Up2Date
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\refint\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.pdb
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\tod.genruntimeconfig.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod-b7e1e7f21dff8067be2a505fb9fabb943485823b\tod\obj\Debug\net9.0\ref\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\appsettings.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tod.staticwebassets.endpoints.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tod.staticwebassets.runtime.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tod.exe
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tod.deps.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tod.runtimeconfig.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tod.pdb
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Humanizer.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.csproj.AssemblyReference.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.AssemblyInfoInputs.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.AssemblyInfo.cs
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.csproj.CoreCompileInputs.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.RazorAssemblyInfo.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.RazorAssemblyInfo.cs
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\scopedcss\bundle\tod.styles.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\scopedcss\projectbundle\tod.bundle.scp.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\dfsg4lyq0c-3hf8cappz4.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\pzk7rj2b99-pziursb570.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\2oktie9eet-fr7q2aak1r.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\bfqo7pbb5j-bqjiyaj88i.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\di7kkygcfx-c2jlpeoesf.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\qhscpo9ku7-erw9l3u2r3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\rnw71mbbgi-aexeepp0ev.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\zqgkn00w01-d7shbmvgxk.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\ozrhwy19s5-ausgxo2sd3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\05ea9sd8sd-k8d9w2qqmf.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\eiidfguyar-cosvhxvwiu.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\7s0krojket-ub07r2b239.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\asg5cnziy7-fvhpjtyr6v.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\2ajv7tjkxn-b7pk76d08c.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\hj8pui8pv4-fsbi9cje9m.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\no8iveeq9m-rzd6atqjts.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\kn97a5ii55-ee0r1s7dh0.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\eoy5tww5hu-dxx9fxp4il.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\ppqr8wr1mg-jd9uben2k1.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\me4i9lj3uz-khv3u5hwcm.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\06dhxyqvu6-r4e9w2rdcm.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\4nfp4dr6g6-lcd1t2u6c8.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\0pbnvs8g8l-c2oey78nd0.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\32n85hpjfp-tdbxkamptv.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\z0autbqo4a-j5mq2jizvt.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\1mgd27siry-06098lyss8.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\b1p4ndekmj-nvvlpmu67g.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\9kiy79padj-s35ty4nyc5.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\pkk0vrvzwj-pj5nd1wqec.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\btjljqi5f7-46ein0sx1k.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\09flpfk13k-v0zj4ognzu.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\e4zj1kicma-37tfw0ft22.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\p72mxd5oy8-hrwsygsryq.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\sm15lvuoat-pk9g2wxc8p.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\kt4ht5r6f4-ft3s53vfgj.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\jz7yuz28o0-6cfz1n2cew.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\u8w16cthps-6pdc2jztkx.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\025omkewjm-493y06b0oq.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\cf2bgxlw11-iovd86k7lj.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\iv1l3fapnm-vr1egmr9el.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\3w1m4cqbhm-kbrnm935zg.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\srqj8usaji-jj8uyg4cgr.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\2j8a6ubens-y7v9cxd14o.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\bqy7hmcuan-notf2xhcfb.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\o54xo83tn5-h1s4sie4z3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\7azfxu6jv8-63fj8s7r0e.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\a95i8edj29-0j3bgjxly4.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\gfph1cb4k9-47otxtyo56.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\6fnfl0a8l6-4v8eqarkd7.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\qqlm8ifr5x-l3n5xuwxn8.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\xh8cpllkhv-ilo7uva0vt.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\aovmci4rno-qlccset4i1.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\s25vzeil62-lzl9nlhx6b.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\6oaz9p8c49-ag7o75518u.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\g7k8nllzvp-xzw0cte36n.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\wxvy42l6rr-0i3buxo5is.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\ldfwnlvkw4-o1o13a6vjx.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\wop92ew7j8-ttgo8qnofa.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\9mlpwbx803-2z0ns9nrw6.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\izfwqktzmq-muycvpuwrr.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\2ltvpyh29n-87fc7y1x7t.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\a1xk7e5gje-jfsiqqwiad.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\pq7ztbaw6e-r9teevq30l.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\compressed\imkvptp2kd-r9teevq30l.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.csproj.Up2Date
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\refint\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.pdb
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\tod.genruntimeconfig.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod_yedek26haz_saat12.26\tod\obj\Debug\net9.0\ref\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\appsettings.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tod.staticwebassets.endpoints.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tod.staticwebassets.runtime.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tod.exe
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tod.deps.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tod.runtimeconfig.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tod.pdb
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Humanizer.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.csproj.AssemblyReference.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.AssemblyInfoInputs.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.AssemblyInfo.cs
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.csproj.CoreCompileInputs.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.RazorAssemblyInfo.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.RazorAssemblyInfo.cs
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\scopedcss\bundle\tod.styles.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\scopedcss\projectbundle\tod.bundle.scp.css
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\dfsg4lyq0c-3hf8cappz4.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\pzk7rj2b99-pziursb570.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\2oktie9eet-fr7q2aak1r.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\bfqo7pbb5j-bqjiyaj88i.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\di7kkygcfx-c2jlpeoesf.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\qhscpo9ku7-erw9l3u2r3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\rnw71mbbgi-aexeepp0ev.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\zqgkn00w01-d7shbmvgxk.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\ozrhwy19s5-ausgxo2sd3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\05ea9sd8sd-k8d9w2qqmf.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\eiidfguyar-cosvhxvwiu.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\7s0krojket-ub07r2b239.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\asg5cnziy7-fvhpjtyr6v.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\2ajv7tjkxn-b7pk76d08c.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\hj8pui8pv4-fsbi9cje9m.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\no8iveeq9m-rzd6atqjts.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\kn97a5ii55-ee0r1s7dh0.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\eoy5tww5hu-dxx9fxp4il.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\ppqr8wr1mg-jd9uben2k1.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\me4i9lj3uz-khv3u5hwcm.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\06dhxyqvu6-r4e9w2rdcm.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\4nfp4dr6g6-lcd1t2u6c8.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\0pbnvs8g8l-c2oey78nd0.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\32n85hpjfp-tdbxkamptv.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\z0autbqo4a-j5mq2jizvt.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\1mgd27siry-06098lyss8.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\b1p4ndekmj-nvvlpmu67g.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\9kiy79padj-s35ty4nyc5.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\pkk0vrvzwj-pj5nd1wqec.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\btjljqi5f7-46ein0sx1k.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\09flpfk13k-v0zj4ognzu.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\e4zj1kicma-37tfw0ft22.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\p72mxd5oy8-hrwsygsryq.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\sm15lvuoat-pk9g2wxc8p.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\kt4ht5r6f4-ft3s53vfgj.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\jz7yuz28o0-6cfz1n2cew.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\u8w16cthps-6pdc2jztkx.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\025omkewjm-493y06b0oq.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\cf2bgxlw11-iovd86k7lj.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\iv1l3fapnm-vr1egmr9el.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\3w1m4cqbhm-kbrnm935zg.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\srqj8usaji-jj8uyg4cgr.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\2j8a6ubens-y7v9cxd14o.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\bqy7hmcuan-notf2xhcfb.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\o54xo83tn5-h1s4sie4z3.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\7azfxu6jv8-63fj8s7r0e.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\a95i8edj29-0j3bgjxly4.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\gfph1cb4k9-47otxtyo56.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\6fnfl0a8l6-4v8eqarkd7.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\qqlm8ifr5x-l3n5xuwxn8.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\xh8cpllkhv-ilo7uva0vt.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\aovmci4rno-qlccset4i1.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\s25vzeil62-lzl9nlhx6b.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\6oaz9p8c49-ag7o75518u.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\g7k8nllzvp-xzw0cte36n.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\wxvy42l6rr-0i3buxo5is.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\ldfwnlvkw4-o1o13a6vjx.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\wop92ew7j8-ttgo8qnofa.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\9mlpwbx803-2z0ns9nrw6.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\izfwqktzmq-muycvpuwrr.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\2ltvpyh29n-87fc7y1x7t.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\a1xk7e5gje-jfsiqqwiad.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\pq7ztbaw6e-r9teevq30l.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\compressed\imkvptp2kd-r9teevq30l.gz
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.csproj.Up2Date
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\refint\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.pdb
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.genruntimeconfig.cache
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\ref\tod.dll
