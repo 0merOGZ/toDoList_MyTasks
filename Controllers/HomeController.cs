@@ -11,13 +11,14 @@ public class HomeController : Controller
 
     public HomeController(TodoContext ctx) => context = ctx;
 
-    public IActionResult Index(string id)
+    public IActionResult Index(string id, string sort)
     {
         var filters = new Filters(id);
         ViewBag.Filters = filters;
         ViewBag.Categories = context.Categories.ToList();
         ViewBag.Statuses = context.Statuses.ToList();
         ViewBag.DueFilters = Filters.dueFilterValues;
+        ViewBag.Sort = sort;
 
         IQueryable<Todo> query = context.Todos.
         Include(t => t.Category).
@@ -48,7 +49,27 @@ public class HomeController : Controller
             }
         }
 
-        var tasks = query.OrderBy(t => t.dueDate).ToList();
+        // Sıralama
+        switch (sort)
+        {
+            case "date_asc":
+                query = query.OrderBy(t => t.dueDate);
+                break;
+            case "date_desc":
+                query = query.OrderByDescending(t => t.dueDate);
+                break;
+            case "name_asc":
+                query = query.OrderBy(t => t.todName);
+                break;
+            case "name_desc":
+                query = query.OrderByDescending(t => t.todName);
+                break;
+            default:
+                query = query.OrderBy(t => t.dueDate);
+                break;
+        }
+
+        var tasks = query.ToList();
 
         return View(tasks);
     }
@@ -80,10 +101,10 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult Filter(string[] filter)
+    public IActionResult Filter(string[] filter, string sort)
     {
         string id = string.Join("-", filter);
-        return RedirectToAction("Index", new { ID=id });
+        return RedirectToAction("Index", new { ID = id, sort = sort });
     }
 
     [HttpPost]

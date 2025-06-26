@@ -911,3 +911,4 @@ C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\refint\tod.dll
 C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.pdb
 C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.genruntimeconfig.cache
 C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\ref\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\tod v2\tod\obj\Debug\net9.0\tod.sourcelink.json

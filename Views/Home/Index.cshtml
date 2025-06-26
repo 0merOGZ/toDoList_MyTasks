@@ -24,6 +24,27 @@
                 <option value="all">All</option>
                 </select>
             </div>
+            <div class="mb-3">
+                <label class="form-label" style="font-size:1.5em;">Sort By</label>
+                <select name="sort" class="form-select">
+                    @foreach (var item in new[] {
+                        new { Value = "date_asc", Text = "Due Date (Ascending)" },
+                        new { Value = "date_desc", Text = "Due Date (Descending)" },
+                        new { Value = "name_asc", Text = "Name (A-Z)" },
+                        new { Value = "name_desc", Text = "Name (Z-A)" }
+                    })
+                    {
+                        if (ViewBag.Sort == item.Value)
+                        {
+                            <option value="@item.Value" selected>@item.Text</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Value">@item.Text</option>
+                        }
+                    }
+                </select>
+            </div>
             <button type="submit" class="btn btn-info">Filter</button>
             <a asp-action="Index" asp-route-id="" class="btn btn-warning">Clear</a>
         </form>
@@ -44,13 +65,28 @@
                 <tbody>
                     @foreach(Todo task in Model)
                     {
-                        string overdue = task.Overdue ? "bg-warning" : ""; 
-                        <tr>
+                        string rowClass = "";
+                        if (task.Status.statusId.ToLower() == "completed")
+                        {
+                            rowClass = "table-success"; // yeşil
+                        }
+                        else if (task.Status.statusId.ToLower() == "pending")
+                        {
+                            if (task.dueDate.HasValue && task.dueDate.Value < DateTime.Now)
+                            {
+                                rowClass = "table-danger"; // kırmızı
+                            }
+                            else if (task.dueDate.HasValue && task.dueDate.Value >= DateTime.Now)
+                            {
+                                rowClass = "table-warning"; // sarı
+                            }
+                        }
+                        <tr class="@rowClass">
                             <td>@task.todName</td>
                             <td>@task.todDescription</td>
                             <td>@task.Category.categoryName</td>
-                            <td class="@overdue">@task.dueDate?.ToString("MM/dd/yyyy")</td>
-                            <td class="@overdue">@task.Status.statusName</td>
+                            <td>@task.dueDate?.ToString("MM/dd/yyyy")</td>
+                            <td>@task.Status.statusName</td>
                             <td>
                                 @if(task.Status.statusId == "pending")
                                 {
