@@ -11,8 +11,18 @@
 </head>
 <body>
     <div class="container">
-        <header class="bg-primary text-white text-center">
-            <h1 class="m-3 p-3">MyTasks</h1>  
+        <header class="bg-primary text-white text-center py-4" style="background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 0 0 1.5rem 1.5rem;">
+            <div class="d-flex flex-column align-items-center">
+                <span class="display-3 mb-2" style="letter-spacing: 0.1em; font-weight: bold; text-shadow: 2px 2px 8px #00000033;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" class="bi bi-list-check me-2" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.854 11.146a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708l.646.647 1.646-1.647a.5.5 0 0 1 .708 0z"/>
+                        <path fill-rule="evenodd" d="M1.5 3.5A.5.5 0 0 1 2 3h12a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5zm0 4A.5.5 0 0 1 2 7h12a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5zm0 4A.5.5 0 0 1 2 11h5a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    MyTasks
+                </span>
+                <span class="fs-5 fst-italic" style="opacity:0.85;">Your personal to do list 
+                    (an Internship prototype by Ömer Yasir OĞUZ)</span>
+            </div>
         </header>
         <main>
             @RenderBody()

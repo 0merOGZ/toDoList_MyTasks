@@ -28,7 +28,7 @@
                 <label class="form-label" style="font-size:1.5em;">Sort By</label>
                 <select name="sort" class="form-select">
                     @foreach (var item in new[] {
-                        new { Value = "date_asc", Text = "Due Date (Ascending)" },
+                        new { Value = "date_asc", Text = "Due Date (Ascending) [DEFAULT]" },
                         new { Value = "date_desc", Text = "Due Date (Descending)" },
                         new { Value = "name_asc", Text = "Name (A-Z)" },
                         new { Value = "name_desc", Text = "Name (Z-A)" }
@@ -51,15 +51,15 @@
     </div>
     <div class="col-md-8">
         <form asp-action="MarkComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString">
-            <table class="table table-bordered table-striped mt-2"> 
+            <table class="table table-bordered table-striped mt-2 rounded-3 overflow-hidden"> 
                 <thead> 
                     <tr>
-                        <th style="font-size:2em;">Name</th>
-                        <th style="font-size:2em;">Description</th>
-                        <th style="font-size:2em;">Category</th>
-                        <th style="font-size:2em;">Due Date</th>
-                        <th style="font-size:2em;">Status</th>
-                        <th class="w-25" style="font-size:2em;"></th>
+                        <th class="fw-bold" style="font-size:2em;">Name</th>
+                        <th class="fw-bold" style="font-size:2em;">Description</th>
+                        <th class="fw-bold" style="font-size:2em;">Category</th>
+                        <th class="fw-bold" style="font-size:2em; min-width: 180px;">Due Date</th>
+                        <th class="fw-bold" style="font-size:2em;">Status</th>
+                        <th class="fw-bold w-25" style="font-size:2em;"></th>
                     </tr>
                 </thead>
                 <tbody>
