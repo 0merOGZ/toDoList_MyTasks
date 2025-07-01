@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qSLesHjL9/M=",
+  "dgSpecHash": "utQmaa+qwlo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ömer Yasir OĞUZ\\Desktop\\tod v2\\tod\\tod.csproj",
+  "projectFilePath": "C:\\Users\\Ömer Yasir OĞUZ\\Desktop\\PROJELER\\ToDoList\\tod v2\\tod\\tod.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ömer Yasir OĞUZ\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Ömer Yasir OĞUZ\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
