@@ -1296,7 +1296,6 @@ C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0
 C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0\scopedcss\bundle\tod.styles.css
 C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0\scopedcss\projectbundle\tod.bundle.scp.css
-C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0\compressed\dfsg4lyq0c-3hf8cappz4.gz
 C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0\compressed\pzk7rj2b99-pziursb570.gz
 C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0\compressed\2oktie9eet-fr7q2aak1r.gz
 C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0\compressed\bfqo7pbb5j-bqjiyaj88i.gz
@@ -1370,3 +1369,4 @@ C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0
 C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0\tod.pdb
 C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0\tod.genruntimeconfig.cache
 C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0\ref\tod.dll
+C:\Users\Ömer Yasir OĞUZ\Desktop\PROJELER\ToDoList\tod v2\tod\obj\Debug\net9.0\compressed\dfsg4lyq0c-3hf8cappz4.gz
