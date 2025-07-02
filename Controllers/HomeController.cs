@@ -131,4 +131,17 @@ public class HomeController : Controller
         context.SaveChanges(); 
         return RedirectToAction("Index", new { ID=id });
     }
+
+    [HttpPost]
+    public IActionResult Unmark([FromRoute] string id, Todo selected)
+    {
+        selected = context.Todos.Find(selected.todId);
+
+        if (selected != null)
+        {
+            selected.statusId = "pending";
+            context.SaveChanges();
+        }
+        return RedirectToAction("Index", new { ID = id });
+    }
 }

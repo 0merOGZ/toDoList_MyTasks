@@ -3,9 +3,9 @@
 <div class="row">
     <div class="col-md-4">
         <div class="card mb-3">
-            <div class="card-header fw-bold text-center" style="font-size:2em; 
+            <div class="card-header fw-bold text-center" style="font-size:2.5em; 
             background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2em;">Filter</div>
+            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2.5em;">Filter</div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
                 <form asp-action="Filter" method="post">
@@ -24,7 +24,6 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" style="font-size:1.1em;">Status</label>
                         <select name="filter" class="form-select"
                         asp-items="@(new SelectList(ViewBag.Statuses, "statusId", "statusName", ViewBag.Filters.statusID))">
                         <option value="all">All</option>
@@ -36,9 +35,9 @@
             </div>
         </div>
         <div class="card mb-3">
-            <div class="card-header fw-bold text-center" style="font-size:2em; 
+            <div class="card-header fw-bold text-center" style="font-size:2.5em; 
             background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2em;">Sort By</div>
+            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2.5em;">Sort By</div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
                 <form asp-action="Filter" method="post">
@@ -69,15 +68,15 @@
     </div>
     <div class="col-md-8"> 
         <div class="card mb-3">
-            <div class="card-header fw-bold text-center" style="font-size:2em; 
+            <div class="card-header fw-bold text-center" style="font-size:2.5em; 
             background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2em;">Manage</div>
+            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2.5em;">Manage</div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
-                <form asp-action="DeleteComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString" class="d-inline">
-                    <a asp-action="Add" class="btn btn-info">Add a New Task</a>
-                    <button type="submit" class="btn btn-danger">Delete All Completed Tasks</button>
-                    <a class="btn btn-success" href="https://calendar.google.com/calendar/u/0/r?pli=1" 
+                <form asp-action="DeleteComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString" class="d-inline w-100">
+                    <a asp-action="Add" class="btn btn-info" style="font-size:1.5em;">Add a New Task</a>
+                    <button type="submit" class="btn btn-danger" style="font-size:1.5em;">Delete All Completed Tasks</button>
+                    <a class="btn btn-success float-end" href="https://calendar.google.com/calendar/u/0/r?pli=1" style="font-size:1.5em;"
                     target="=_blank">Set a Reminder</a>
                 </form>
             </div>
@@ -85,7 +84,7 @@
         <div class="card">
             <div class="card-header fw-bold text-center" style="font-size:2em; 
             background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2em;">Tasks</div>
+            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2.5em;">Tasks</div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
                 <form asp-action="MarkComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString">
@@ -145,6 +144,13 @@
                                             <button type="submit" class="btn btn-info btn-sm" 
                                             name="@nameof(Todo.todId)" value="@task.todId">Mark as Completed</button>
                                         }
+                                        else if(@task.Status.statusId == "completed")
+                                        {
+                                            <form asp-action="Unmark" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display: inline;">
+                                                <button type="submit" class="btn btn-warning btn-sm"
+                                                name="@nameof(Todo.todId)" value="@task.todId">Unmark</button>
+                                            </form>
+                                        }    
                                     </td>
                                 </tr>
                             }
