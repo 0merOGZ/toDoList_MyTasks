@@ -1,0 +1,14 @@
+# Build klasörleri
+bin/
+obj/
+
+# User-specific dosyalar
+*.user
+*.suo
+
+# VS Code
+.vscode/
+
+# Diğer yaygın dışlanacaklar
+*.log
+*.tmp
