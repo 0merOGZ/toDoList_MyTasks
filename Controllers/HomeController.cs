@@ -49,7 +49,6 @@ public class HomeController : Controller
             }
         }
 
-        // Sıralama
         switch (sort)
         {
             case "date_asc":

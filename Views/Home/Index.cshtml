@@ -2,45 +2,46 @@
 
 <div class="row">
     <div class="col-md-4">
-        <div class="card mb-3">
+        <div class="card mb-3" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
             <div class="card-header fw-bold text-center" style="font-size:2.5em; 
             background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2.5em;">Filter</div>
+            border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">Filter</div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
-                <form asp-action="Filter" method="post">
+                <form asp-action="Filter" method="post" style="background-color: #a1e7f2; border-radius: 2.5rem 2.5rem 2.5rem 2.5rem; padding: 1.5rem; width: 100%;">
                     <div class="mb-3">
-                        <label class="form-label" style="font-size:1.1em;">Category</label>
+                        <label class="form-label" style="font-size:1.3em; font-weight:bold;">Category</label>
                         <select name="filter" class="form-select"
                         asp-items="@(new SelectList(ViewBag.Categories,"categoryId","categoryName",ViewBag.Filters.categoryID))">
                         <option value="all">All</option> 
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" style="font-size:1.1em;">Due Date</label>
+                        <label class="form-label" style="font-size:1.3em; font-weight:bold;">Due Date</label>
                         <select name="filter" class="form-select"
                         asp-items="@(new SelectList(ViewBag.DueFilters, "Key", "Value", ViewBag.Filters.dueDate))">
                         <option value="all">All</option>
                         </select>
                     </div>
                     <div class="mb-3">
+                        <label class="form-label" style="font-size:1.3em; font-weight:bold;">Status</label>
                         <select name="filter" class="form-select"
                         asp-items="@(new SelectList(ViewBag.Statuses, "statusId", "statusName", ViewBag.Filters.statusID))">
                         <option value="all">All</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-info">Filter</button>
-                    <a asp-action="Index" asp-route-id="" class="btn btn-warning">Clear</a>
+                    <button type="submit" class="btn btn-primary" style="font-size:1.2em; font-weight:bold; padding:0.6em 1.2em;">Filter</button>
+                    <a asp-action="Index" asp-route-id="" class="btn btn-warning" style="font-size:1.2em; font-weight:bold; padding:0.6em 1.2em;">Clear</a>
                 </form>
             </div>
         </div>
-        <div class="card mb-3">
+        <div class="card mb-3" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
             <div class="card-header fw-bold text-center" style="font-size:2.5em; 
             background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2.5em;">Sort By</div>
+            border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">Sort By</div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
-                <form asp-action="Filter" method="post">
+                <form asp-action="Filter" method="post" style="background-color: #a1e7f2; border-radius: 2.5rem 2.5rem 2.5rem 2.5rem; padding: 1.5rem; width: 100%">
                     <div class="mb-3">
                         <select name="sort" class="form-select">
                             @foreach (var item in new[] {
@@ -61,30 +62,31 @@
                             }
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Apply</button>
+                    <button type="submit" class="btn btn-primary" style="font-size:1.2em; font-weight:bold; padding:0.6em 1.2em;">Apply</button>    
                 </form>
             </div> 
         </div>
     </div>
     <div class="col-md-8"> 
-        <div class="card mb-3">
+        <div class="card mb-3" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
             <div class="card-header fw-bold text-center" style="font-size:2.5em; 
             background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2.5em;">Manage</div>
+            border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">Manage</div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
                 <form asp-action="DeleteComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString" class="d-inline w-100">
-                    <a asp-action="Add" class="btn btn-info" style="font-size:1.5em;">Add a New Task</a>
+                    <a asp-action="Add" class="btn btn-primary" style="font-size:1.5em;">Add a New Task</a>
                     <button type="submit" class="btn btn-danger" style="font-size:1.5em;">Delete All Completed Tasks</button>
                     <a class="btn btn-success float-end" href="https://calendar.google.com/calendar/u/0/r?pli=1" style="font-size:1.5em;"
-                    target="=_blank">Set a Reminder</a>
+                    target="=_blank">Set a Reminder</a> 
+                    <br><br>
                 </form>
             </div>
         </div>
-        <div class="card">
+        <div class="card" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
             <div class="card-header fw-bold text-center" style="font-size:2em; 
             background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-            border-radius: 0 0 2.5rem 2.5rem; color: white; font-size:2.5em;">Tasks</div>
+            border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">Tasks</div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
                 <form asp-action="MarkComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString">
