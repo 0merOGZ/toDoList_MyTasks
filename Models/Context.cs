@@ -12,6 +12,8 @@ namespace tod.Models {
          public DbSet<Todo> Todos { get; set; } = null!;
          public DbSet<Category> Categories { get; set; } = null!;
          public DbSet<Status> Statuses { get; set; } = null!;
+         public DbSet<Team> Teams { get; set; } = null!;
+         public DbSet<User> Users { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             modelBuilder.Entity<Category>().HasData(
@@ -28,6 +30,20 @@ namespace tod.Models {
                 new Status { statusId = "pending", statusName = "Pending" },
                 new Status { statusId = "completed", statusName = "Completed" }
             );
+
+            // Team-Leader (User) ilişkisi
+            modelBuilder.Entity<Team>()
+                .HasOne(t => t.Leader)
+                .WithMany()
+                .HasForeignKey(t => t.teamLeader)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Team-Members ilişkisi (bir takımın birden fazla üyesi olabilir)
+            modelBuilder.Entity<User>()
+                .HasOne(u => u.Team)
+                .WithMany(t => t.Members)
+                .HasForeignKey(u => u.teamId)
+                .OnDelete(DeleteBehavior.SetNull);
         }
     }
 }

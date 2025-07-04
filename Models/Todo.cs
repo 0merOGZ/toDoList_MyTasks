@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace tod.Models {
 
@@ -31,5 +32,9 @@ namespace tod.Models {
             Status.statusId.ToLower() == "pending" &&
             dueDate.HasValue &&
             dueDate.Value < DateTime.Now;
+
+        public int? userId { get; set; } // Nullable FK
+        [ForeignKey("userId")]
+        public User? User { get; set; }
     }
 }
