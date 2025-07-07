@@ -11,7 +11,7 @@ public class HomeController : Controller
 
     public HomeController(TodoContext ctx) => context = ctx;
 
-    public IActionResult Index(string id, string sort)
+    public IActionResult Index(string id, string sort, string dueIn)
     {
         var filters = new Filters(id);
         ViewBag.Filters = filters;
@@ -49,6 +49,7 @@ public class HomeController : Controller
             }
         }
 
+        // Sıralama
         switch (sort)
         {
             case "date_asc":
@@ -63,12 +64,34 @@ public class HomeController : Controller
             case "name_desc":
                 query = query.OrderByDescending(t => t.todName);
                 break;
+            case "category_asc":
+                query = query.OrderBy(t => t.Category.categoryName);
+                break;
+            case "category_desc":
+                query = query.OrderByDescending(t => t.Category.categoryName);
+                break;
             default:
                 query = query.OrderBy(t => t.dueDate);
                 break;
         }
 
         var tasks = query.ToList();
+
+        // Due In filtresi (bellekte uygula)
+        if (!string.IsNullOrEmpty(dueIn) && dueIn != "all")
+        {
+            if (int.TryParse(dueIn, out int days))
+            {
+                var today = DateTime.Today;
+                tasks = tasks
+                    .Where(t => t.dueDate.HasValue && (t.dueDate.Value.Date - today).TotalDays <= days && (t.dueDate.Value.Date - today).TotalDays >= 0)
+                    .ToList();
+            }
+        }
+
+        // Tamamlanan ve toplam görev sayısı
+        ViewBag.CompletedCount = tasks.Count(t => t.statusId == "completed");
+        ViewBag.TotalCount = tasks.Count;
 
         return View(tasks);
     }
@@ -120,6 +143,19 @@ public class HomeController : Controller
     }
 
     [HttpPost]
+    public IActionResult MarkPending(int todId, string id)
+    {
+        var task = context.Todos.FirstOrDefault(task => task.todId == todId);
+        if (task != null)
+        {
+            task.statusId = "pending";
+            context.SaveChanges();
+        }
+        return RedirectToAction("Index", new { id = id });
+    }
+
+
+    [HttpPost]
     public IActionResult DeleteComplete(string id)
     {
         var toDelete = context.Todos.Where(t => t.statusId == "completed").ToList();
@@ -131,16 +167,12 @@ public class HomeController : Controller
         return RedirectToAction("Index", new { ID=id });
     }
 
-    [HttpPost]
-    public IActionResult Unmark([FromRoute] string id, Todo selected)
+    public IActionResult SignIn()
     {
-        selected = context.Todos.Find(selected.todId);
-
-        if (selected != null)
-        {
-            selected.statusId = "pending";
-            context.SaveChanges();
-        }
-        return RedirectToAction("Index", new { ID = id });
+        return View();
+    }
+    public IActionResult LogIn()
+    {
+        return View();
     }
 }

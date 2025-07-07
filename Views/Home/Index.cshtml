@@ -8,7 +8,7 @@
             border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">Filter</div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
-                <form asp-action="Filter" method="post" style="background-color: #a1e7f2; border-radius: 2.5rem; padding: 1.5rem; width: 100%;">
+                <form asp-action="Index" method="get" style="background-color: #a1e7f2; border-radius: 2.5rem; padding: 1.5rem; width: 100%;">
                     <div class="row">
                         <div class="col-6 mb-3">
                             <label class="form-label" style="font-size:1.3em; font-weight:bold;">Category</label>
@@ -35,7 +35,8 @@
                         </div>
                         <div class="col-6 mb-3">
                             <label class="form-label" style="font-size:1.3em; font-weight:bold;">Due In</label>
-                            <select name="filter" class="form-select">
+                            <select name="dueIn" class="form-select">
+                                <var daysLeft = (task.dueDate.Value.Date - DateTime.Now.Date).TotalDays;
                                 <option value="all">All</option>
                                 <option value="5">5 Days</option>
                                 <option value="15">15 Days</option>
@@ -49,7 +50,7 @@
                 </form>
             </div>
         </div>
-        <div class="card mb-3" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
+        @*<div class="card mb-3" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
             <div class="card-header fw-bold text-center" style="font-size:2.5em; 
             background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
             border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">Sort By</div>
@@ -79,7 +80,7 @@
                     <button type="submit" class="btn btn-primary" style="font-size:1.2em; font-weight:bold; padding:0.6em 1.2em;">Apply</button>    
                 </form>
             </div> 
-        </div>
+        </div> *@
     </div>
     <div class="col-md-8"> 
         <div class="card mb-3" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
@@ -89,9 +90,9 @@
             <div style="height:0.5rem;"></div>
             <div class="card-body">
                 <form class="d-inline w-100">
-                    <a class="btn btn-primary" style="font-size:1.5em;">Login</a>
+                    <a asp-action="LogIn" class="btn btn-primary" style="font-size:1.5em;">Login</a>
                     <button type="submit" class="btn btn-danger" style="font-size:1.5em;">Logout</button>
-                    <a class="btn btn-success" style="font-size:1.5em;">SignIn</a>
+                    <a asp-action="SignIn" class="btn btn-success" style="font-size:1.5em;">SignIn</a>
                     <a class="btn btn-warning float-end" style="font-size:1.5em;">Status:</a>
                     <br><br>
                 </form>
@@ -137,7 +138,11 @@
                 <div style="font-size:1em; margin-left: 1.5em;">
                     
                 </div>
-                <span style="font-size:0.7em;">Total: @Model.Count()</span>
+                <span style="font-size:0.7em;">
+                    <span style="background: #28a745; color: white; border-radius: 1.5em; padding: 0.4em 0.4em; font-weight: bold; font-size:0.7em; display: inline-block; min-width: 20px; text-align: center;">
+                        @ViewBag.CompletedCount/@ViewBag.TotalCount
+                    </span>
+                </span>
             </div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
@@ -145,12 +150,43 @@
                     <table class="table table-bordered table-striped mt-2 rounded-3 overflow-hidden"> 
                         <thead> 
                             <tr>
-                                <th class="fw-bold" style="font-size:1.6em;">Name</th>
-                                <th class="fw-bold" style="font-size:1.6em;">Description</th>
-                                <th class="fw-bold" style="font-size:1.6em;">Category</th>
-                                <th class="fw-bold" style="font-size:1.6em; min-width: 180px;">Due Date</th>
-                                <th class="fw-bold" style="font-size:1.6em;">Status</th>
-                                <th class="fw-bold w-25" style="font-size:1.6em;"></th>
+                                <th class="fw-bold text-center align-middle" style="font-size:1.6em; vertical-align: middle;">
+                                    <div class="d-flex flex-row align-items-center justify-content-center" style="gap:6px;">
+                                        <span>Name</span>
+                                        <a href="?sort=name_asc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort A-Z">
+                                            <i class="bi bi-chevron-up" style="color: #007bff; font-size:1em;"></i>
+                                        </a>
+                                        <a href="?sort=name_desc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort Z-A">
+                                            <i class="bi bi-chevron-down" style="color: #007bff; font-size:1em;"></i>
+                                        </a>
+                                    </div>
+                                </th>
+                                <th class="fw-bold text-center align-middle" style="font-size:1.6em; vertical-align: middle;">Description</th>
+                                <th class="fw-bold text-center align-middle" style="font-size:1.6em; vertical-align: middle;">
+                                    <div class="d-flex flex-row align-items-center justify-content-center" style="gap:6px;">
+                                        <span>Category</span>
+                                        <a href="?sort=category_asc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort A-Z">
+                                            <i class="bi bi-chevron-up" style="color: #007bff; font-size:1em;"></i>
+                                        </a>
+                                        <a href="?sort=category_desc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort Z-A">
+                                            <i class="bi bi-chevron-down" style="color: #007bff; font-size:1em;"></i>
+                                        </a>
+                                    </div>
+                                </th>
+                                <th class="fw-bold text-center align-middle" style="font-size:1.6em; min-width: 200px; vertical-align: middle;"> 
+                                    <div class="d-flex flex-row align-items-center justify-content-center" style="gap:6px;">
+                                        <span>Due Date</span>
+                                        <a href="?sort=date_asc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort A-Z">
+                                            <i class="bi bi-chevron-up" style="color: #007bff; font-size:1em;"></i>
+                                        </a>
+                                        <a href="?sort=date_desc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort Z-A">
+                                            <i class="bi bi-chevron-down" style="color: #007bff; font-size:1em;"></i>
+                                        </a>
+                                    </div>
+                                </th>
+                                <th class="fw-bold text-center align-middle" style="font-size:1.6em; vertical-align: middle;">Status</th>
+                                <th class="fw-bold text-center align-middle" style="font-size:1.6em; min-width: 140px; vertical-align: middle;">Assign To</th>
+                                <th class="fw-bold w-25 text-center align-middle" style="font-size:1.6em; vertical-align: middle;"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -192,6 +228,7 @@
                                             }
                                         }
                                     </td>
+                                    <td>atandı</td>
                                     <td>
                                         @if(task.Status.statusId == "pending")
                                         {
