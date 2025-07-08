@@ -33,6 +33,9 @@ namespace tod.Models {
             dueDate.HasValue &&
             dueDate.Value < DateTime.Now;
 
+        public bool IsArchived { get; set; } = false;
+        public DateTime? ArchivedDate { get; set; }
+
         public int? userId { get; set; } // Nullable FK
         [ForeignKey("userId")]
         public User? User { get; set; }

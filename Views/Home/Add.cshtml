@@ -1,4 +1,7 @@
 @model Todo
+@{
+    var userRole = Context.Session.GetString("userRole");
+}
 
 <h2 style="text-align: center; margin-bottom: 20px;">New Task</h2>
 
@@ -17,13 +20,25 @@
             </div>
         </div>
         <div class="row">
-            <div class="mb-3 col-6">
-                <label asp-for="categoryId" class="form-label">Category</label>
-                <span asp-validation-for="categoryId" class="text-danger" style="margin-left:8px; font-size:0.95em;"></span>
-                <select asp-for="categoryId" class="form-select" asp-items="@(new SelectList(ViewBag.Categories, "categoryId", "categoryName"))">
-                    <option value="">Select a Category</option>
-                </select>
-            </div>
+            @if (userRole == "Team Member")
+            {
+                <div class="mb-3 col-6">
+                    <label asp-for="categoryId" class="form-label">Category</label>
+                    <span asp-validation-for="categoryId" class="text-danger" style="margin-left:8px; font-size:0.95em;"></span>
+                    <select asp-for="categoryId" class="form-select">
+                        <option value="">Select a Category</option>
+                        @foreach (var cat in (List<tod.Models.Category>)ViewBag.Categories)
+                        {
+                            if (cat.categoryId != "work")
+                            {
+                                <option value="@cat.categoryId">@cat.categoryName</option>
+                            }
+                        }
+                    </select>
+                </div>
+            }
+            @* Team Leader ise kategori alanı hiç gösterilmesin *@
+            <input type="hidden" name="categoryId" value="work" />
             <div class="mb-3 col-6">
                 <label asp-for="statusId" class="form-label">Status</label>
                 <span asp-validation-for="statusId" class="text-danger" style="margin-left:8px; font-size:0.95em;"></span>

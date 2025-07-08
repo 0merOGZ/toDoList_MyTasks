@@ -1,0 +1,52 @@
+@model IEnumerable<Todo>
+
+@{
+    ViewBag.Title = "Archived Tasks";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card mb-3" style="border-radius: 2.5rem;">
+            <div class="card-header fw-bold text-center" style="font-size:2.5em; background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 2.5rem 2.5rem 0 0; color: white;">Archived Tasks</div>
+            <div style="height:0.5rem;"></div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped mt-2 rounded-3 overflow-hidden">
+                    <thead>
+                        <tr>
+                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Name</th>
+                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Description</th>
+                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Category</th>
+                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Due Date</th>
+                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Status</th>
+                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Assigned To</th>
+                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Archived Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var task in Model)
+                        {
+                            <tr>
+                                <td>@task.todName</td>
+                                <td>@task.todDescription</td>
+                                <td>@task.Category?.categoryName</td>
+                                <td>@task.dueDate?.ToString("MM/dd/yyyy")</td>
+                                <td>@task.Status?.statusName</td>
+                                <td>
+                                    @if (task.User != null)
+                                    {
+                                        <span>@task.User.userName (@task.User.userMail)</span>
+                                    }
+                                    else
+                                    {
+                                        <span>Atanmadı</span>
+                                    }
+                                </td>
+                                <td>@task.ArchivedDate?.ToString("MM/dd/yyyy HH:mm")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div> 

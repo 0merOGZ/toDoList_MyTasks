@@ -35,21 +35,15 @@ public class HomeController : Controller
         IQueryable<Todo> query = context.Todos.
         Include(t => t.Category).
         Include(t => t.Status)
-        .Include(t => t.User);
+        .Include(t => t.User)
+        .Where(t => !t.IsArchived);
 
         // Kullanıcıya göre filtreleme
         if (userRole == "Team Member")
         {
-            // Sadece kendi görevleri ve kendi liderinin takımındaki görevler
+            // Sadece kendi görevleri
             var userIdStr = HttpContext.Session.GetString("userId");
-            var teamIdStr = HttpContext.Session.GetString("teamId");
-            if (!string.IsNullOrEmpty(userIdStr) && !string.IsNullOrEmpty(teamIdStr))
-            {
-                int userId = int.Parse(userIdStr);
-                int teamId = int.Parse(teamIdStr);
-                query = query.Where(t => t.userId == userId || (t.User != null && t.User.teamId == teamId));
-            }
-            else if (!string.IsNullOrEmpty(userIdStr))
+            if (!string.IsNullOrEmpty(userIdStr))
             {
                 int userId = int.Parse(userIdStr);
                 query = query.Where(t => t.userId == userId);
@@ -57,12 +51,12 @@ public class HomeController : Controller
         }
         else if (userRole == "Team Leader")
         {
-            // Kendi takımındaki tüm görevler
+            // Kendi takımındaki üyelerin sadece 'work' kategorisindeki görevleri
             var teamIdStr = HttpContext.Session.GetString("teamId");
             if (!string.IsNullOrEmpty(teamIdStr))
             {
                 int teamId = int.Parse(teamIdStr);
-                query = query.Where(t => t.User != null && t.User.teamId == teamId);
+                query = query.Where(t => t.User != null && t.User.teamId == teamId && t.categoryId == "work");
             }
         }
 
@@ -140,6 +134,46 @@ public class HomeController : Controller
     }
 
     [HttpGet]
+    public IActionResult Archive()
+    {
+        var userRole = HttpContext.Session.GetString("userRole");
+        var userName = HttpContext.Session.GetString("userName");
+        var teamName = HttpContext.Session.GetString("teamName");
+        ViewBag.UserName = userName;
+        ViewBag.UserRole = userRole;
+        ViewBag.TeamName = teamName;
+        ViewBag.IsLoggedIn = !string.IsNullOrEmpty(userName);
+
+        IQueryable<Todo> query = context.Todos
+            .Include(t => t.Category)
+            .Include(t => t.Status)
+            .Include(t => t.User)
+            .Where(t => t.IsArchived);
+
+        if (userRole == "Team Member")
+        {
+            var userIdStr = HttpContext.Session.GetString("userId");
+            if (!string.IsNullOrEmpty(userIdStr))
+            {
+                int userId = int.Parse(userIdStr);
+                query = query.Where(t => t.userId == userId);
+            }
+        }
+        else if (userRole == "Team Leader")
+        {
+            var teamIdStr = HttpContext.Session.GetString("teamId");
+            if (!string.IsNullOrEmpty(teamIdStr))
+            {
+                int teamId = int.Parse(teamIdStr);
+                query = query.Where(t => t.User != null && t.User.teamId == teamId);
+            }
+        }
+
+        var archivedTasks = query.ToList();
+        return View(archivedTasks);
+    }
+
+    [HttpGet]
     public IActionResult Add()
     {
         ViewBag.Categories = context.Categories.ToList();
@@ -166,11 +200,11 @@ public class HomeController : Controller
     {
         if (ModelState.IsValid)
         {
-            // Eğer liderse ve user seçildiyse ata
             var userRole = HttpContext.Session.GetString("userRole");
             if (userRole == "Team Leader" && assignedUserId.HasValue)
             {
                 task.userId = assignedUserId.Value;
+                task.categoryId = "work"; // Otomatik work kategorisi
             }
             else
             {
@@ -180,6 +214,7 @@ public class HomeController : Controller
                 {
                     task.userId = int.Parse(userIdStr);
                 }
+                // categoryId member'ın seçimine bırakılıyor
             }
             context.Todos.Add(task);
             context.SaveChanges();
@@ -261,7 +296,9 @@ public class HomeController : Controller
         if (task != null)
         {
             task.statusId = "pending";
+            context.Entry(task).Reference(t => t.Status).IsModified = true;
             context.SaveChanges();
+            context.Entry(task).Reload();
         }
         return RedirectToAction("Index", new { id = id });
     }
@@ -269,10 +306,11 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult DeleteComplete(string id)
     {
-        var toDelete = context.Todos.Where(t => t.statusId == "completed").ToList();
-        foreach (var task in toDelete) 
+        var toArchive = context.Todos.Where(t => t.statusId == "completed" && !t.IsArchived).ToList();
+        foreach (var task in toArchive) 
         {
-            context.Todos.Remove(task);
+            task.IsArchived = true;
+            task.ArchivedDate = DateTime.Now;
         }
         context.SaveChanges(); 
         return RedirectToAction("Index", new { ID=id });
@@ -312,20 +350,14 @@ public class HomeController : Controller
         }
         else if (dbRole == "Team Member")
         {
-            // Davet kodu ile takım bul
-            var team = context.Teams.FirstOrDefault(t => t.teamInvitationCode == invitationCode);
-            if (team == null)
-            {
-                TempData["SignInError"] = "Invitation code is invalid.";
-                return RedirectToAction("SignIn");
-            }
+            // Sadece kullanıcıyı ekle, takıma katılım JoinTeam ile olacak
             var user = new User
             {
                 userName = userName,
                 userMail = mail,
                 userPassword = password,
-                userRole = dbRole,
-                teamId = team.teamId
+                userRole = dbRole
+                // teamId yok
             };
             context.Users.Add(user);
             context.SaveChanges();
