@@ -37,12 +37,19 @@
             <span asp-validation-for="dueDate" class="text-danger" style="margin-left:8px; font-size:0.95em;"></span>
             <input asp-for="dueDate" class="form-control" type="date" />
         </div>
-        <div class="mb-3">
-            <label class="form-label">Assign To</label>
-            <select class="form-select">
-                <option value="">Select a User</option>
-            </select>
-        </div>
+        @if (ViewBag.TeamMembers != null && ((List<tod.Models.User>)ViewBag.TeamMembers).Count > 0)
+        {
+            <div class="mb-3">
+                <label class="form-label">Assign To</label>
+                <select class="form-select" name="assignedUserId">
+                    <option value="">Select a User</option>
+                    @foreach (var member in (List<tod.Models.User>)ViewBag.TeamMembers)
+                    {
+                        <option value="@member.userId">@member.userName (@member.userMail)</option>
+                    }
+                </select>
+            </div>
+        }
         <button type="submit" class="btn btn-info">Add</button>
         <a asp-action="Index" class="btn btn-warning">Cancel</a>
     </form>

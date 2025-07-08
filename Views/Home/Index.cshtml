@@ -8,20 +8,28 @@
             border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">Filter</div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
-                <form asp-action="Index" method="get" style="background-color: #a1e7f2; border-radius: 2.5rem; padding: 1.5rem; width: 100%;">
+                <form asp-action="Filter" method="post" style="background-color: #a1e7f2; border-radius: 2.5rem; padding: 1.5rem; width: 100%;">
                     <div class="row">
                         <div class="col-6 mb-3">
                             <label class="form-label" style="font-size:1.3em; font-weight:bold;">Category</label>
                             <select name="filter" class="form-select"
                                 asp-items="@(new SelectList(ViewBag.Categories,"categoryId","categoryName",ViewBag.Filters.categoryID))">
-                                <option value="all">All</option>
+                                @if (ViewBag.Filters.categoryID == null || ViewBag.Filters.categoryID == "all") {
+                                    <option value="all" selected>All</option>
+                                } else {
+                                    <option value="all">All</option>
+                                }
                             </select>
                         </div>
                         <div class="col-6 mb-3">
                             <label class="form-label" style="font-size:1.3em; font-weight:bold;">Due Date</label>
                             <select name="filter" class="form-select"
                                 asp-items="@(new SelectList(ViewBag.DueFilters, "Key", "Value", ViewBag.Filters.dueDate))">
-                                <option value="all">All</option>
+                                @if (ViewBag.Filters.dueDate == null || ViewBag.Filters.dueDate == "all") {
+                                    <option value="all" selected>All</option>
+                                } else {
+                                    <option value="all">All</option>
+                                }
                             </select>
                         </div>
                     </div>
@@ -30,18 +38,41 @@
                             <label class="form-label" style="font-size:1.3em; font-weight:bold;">Status</label>
                             <select name="filter" class="form-select"
                                 asp-items="@(new SelectList(ViewBag.Statuses, "statusId", "statusName", ViewBag.Filters.statusID))">
-                                <option value="all">All</option>
+                                @if (ViewBag.Filters.statusID == null || ViewBag.Filters.statusID == "all") {
+                                    <option value="all" selected>All</option>
+                                } else {
+                                    <option value="all">All</option>
+                                }
                             </select>
                         </div>
                         <div class="col-6 mb-3">
                             <label class="form-label" style="font-size:1.3em; font-weight:bold;">Due In</label>
-                            <select name="dueIn" class="form-select">
-                                <var daysLeft = (task.dueDate.Value.Date - DateTime.Now.Date).TotalDays;
-                                <option value="all">All</option>
-                                <option value="5">5 Days</option>
-                                <option value="15">15 Days</option>
-                                <option value="30">30 Days</option>
-                                <option value="90">90 Days</option>
+                            <select name="filter" class="form-select">
+                                @if (ViewBag.Filters.dueIn == null || ViewBag.Filters.dueIn == "all") {
+                                    <option value="all" selected>All</option>
+                                } else {
+                                    <option value="all">All</option>
+                                }
+                                @if (ViewBag.Filters.dueIn == "5") {
+                                    <option value="5" selected>5 Days</option>
+                                } else {
+                                    <option value="5">5 Days</option>
+                                }
+                                @if (ViewBag.Filters.dueIn == "15") {
+                                    <option value="15" selected>15 Days</option>
+                                } else {
+                                    <option value="15">15 Days</option>
+                                }
+                                @if (ViewBag.Filters.dueIn == "30") {
+                                    <option value="30" selected>30 Days</option>
+                                } else {
+                                    <option value="30">30 Days</option>
+                                }
+                                @if (ViewBag.Filters.dueIn == "90") {
+                                    <option value="90" selected>90 Days</option>
+                                } else {
+                                    <option value="90">90 Days</option>
+                                }
                             </select>
                         </div>
                     </div>
@@ -89,13 +120,69 @@
             border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">User Management</div>
             <div style="height:0.5rem;"></div>
             <div class="card-body">
-                <form class="d-inline w-100">
-                    <a asp-action="LogIn" class="btn btn-primary" style="font-size:1.5em;">Login</a>
-                    <button type="submit" class="btn btn-danger" style="font-size:1.5em;">Logout</button>
-                    <a asp-action="SignIn" class="btn btn-success" style="font-size:1.5em;">SignIn</a>
-                    <a class="btn btn-warning float-end" style="font-size:1.5em;">Status:</a>
-                    <br><br>
-                </form>
+                @if (!(ViewBag.IsLoggedIn ?? false))
+                {
+                    <form asp-action="LogIn" method="post" style="background-image: url(https://t3.ftcdn.net/jpg/02/94/52/66/360_F_294526635_8Fc9IbBHWOC83JsiFNRNx5VivafEjiyi.jpg); background-repeat: no-repeat; background-size: cover; padding: 1px; border: 2px solid black; max-width: 500px; margin: 20px auto; box-sizing: border-box; border-radius: 20px;">
+                        <h2 align="center">Login</h2>
+                        <p style="color: rgb(7, 7, 26);" align="center">Please fill out the form:</p>
+                        <div align="center">
+                            <div style="display: inline-block; background-color: lightseagreen; padding: 10px; border-radius: 20px;">
+                                <label for="mail">Mail:</label>
+                                <input type="email" id="mail" name="mail" placeholder="ex@gmail.com" required>
+                                <br><br>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" placeholder="************" required>
+                                <br><br>
+                                <button type="submit">Login</button>
+                                <a asp-action="SignIn" class="btn btn-success" style="margin-left:10px;">Sign Up</a>
+                                <br><br>
+                            </div>
+                        </div>
+                    </form>
+                }
+                else
+                {
+                    <div style="background: #e0f7fa; border-radius: 20px; padding: 1.5em; text-align:center;">
+                        <h3>Welcome, <b>@ViewBag.UserName</b>!</h3>
+                        <p>Role: <b>@ViewBag.UserRole</b></p>
+                        @if (!string.IsNullOrEmpty((string)ViewBag.TeamName))
+                        {
+                            <p>Team: <b>@ViewBag.TeamName</b></p>
+                        }
+                        @if ((string)ViewBag.UserRole == "Team Leader" && !string.IsNullOrEmpty((string)ViewBag.TeamInvitationCode))
+                        {
+                            <p>Invitation Code: <b>@ViewBag.TeamInvitationCode</b></p>
+                        }
+                        <form asp-action="LogOut" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger" style="font-size:1.5em;">Logout</button>
+                        </form>
+                    </div>
+                }
+                @if ((ViewBag.UserRole as string) == "Team Member" && string.IsNullOrEmpty((string)ViewBag.TeamName))
+                {
+                    <button class="btn btn-warning" style="font-size:1.2em; margin-top:1em;" data-bs-toggle="modal" data-bs-target="#joinTeamModal">Join Team</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="joinTeamModal" tabindex="-1" aria-labelledby="joinTeamModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="joinTeamModalLabel">Join a Team</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <form asp-action="JoinTeam" method="post">
+                            <div class="modal-body">
+                              <label for="joinInvitationCode">Team Invitation Code:</label>
+                              <input type="text" id="joinInvitationCode" name="invitationCode" maxlength="5" class="form-control" required>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                              <button type="submit" class="btn btn-primary">Join</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                }
             </div>
         </div>
         <div class="card mb-3" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
@@ -228,18 +315,32 @@
                                             }
                                         }
                                     </td>
-                                    <td>atandı</td>
                                     <td>
+                                        @if (task.User != null)
+                                        {
+                                            <span>@task.User.userName (@task.User.userMail)</span>
+                                        }
+                                        else
+                                        {
+                                            <span>Atanmadı</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <form asp-action="DeleteTask" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">
+                                            <button type="submit" class="btn btn-outline-danger btn-sm" name="todId" value="@task.todId" title="Delete">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </form>
                                         @if(task.Status.statusId == "pending")
                                         {
-                                            <button type="submit" class="btn btn-info btn-sm" 
-                                            name="@nameof(Todo.todId)" value="@task.todId">Mark as Completed</button>
+                                            <form asp-action="MarkComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">
+                                                <button type="submit" class="btn btn-info btn-sm" name="todId" value="@task.todId">Mark as Completed</button>
+                                            </form>
                                         }
-                                        else if(@task.Status.statusId == "completed")
+                                        else if(task.Status.statusId == "completed")
                                         {
-                                            <form asp-action="Unmark" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display: inline;">
-                                                <button type="submit" class="btn btn-warning btn-sm"
-                                                name="@nameof(Todo.todId)" value="@task.todId">Unmark</button>
+                                            <form asp-action="Unmark" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">
+                                                <button type="submit" class="btn btn-warning btn-sm" name="todId" value="@task.todId">Unmark</button>
                                             </form>
                                         }    
                                     </td>

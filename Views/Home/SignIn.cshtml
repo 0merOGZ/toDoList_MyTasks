@@ -27,11 +27,16 @@
             <input type="email" id="mail" name="mail" placeholder="ex@gmail.com" required>
             <br><br>
             <label for="role">Role</label>
-            <select id="userRole" name="userRole" placeholder="Select your role" required> 
+            <select id="userRole" name="userRole" placeholder="Select your role" required onchange="toggleInvitationCode()"> 
                 <option value="erkek">Team Leader</option>
                 <option value="kadin">Team Member</option> 
-                </select>
+            </select>
             <br><br>
+            <div id="invitationCodeDiv" style="display:none;">
+                <label for="invitationCode">Team Invitation Code:</label>
+                <input type="text" id="invitationCode" name="invitationCode" maxlength="5" placeholder="Enter code">
+                <br><br>
+            </div>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Create a password" required>
             <br><br>
@@ -41,5 +46,19 @@
            </div> 
          </div><br><br> 
         </form>
+<script>
+    function toggleInvitationCode() {
+        var role = document.getElementById('userRole').value;
+        var codeDiv = document.getElementById('invitationCodeDiv');
+        if (role === 'kadin') {
+            codeDiv.style.display = 'block';
+        } else {
+            codeDiv.style.display = 'none';
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        toggleInvitationCode();
+    });
+</script>
 </body>
 </html>
