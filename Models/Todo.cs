@@ -16,6 +16,9 @@ namespace tod.Models {
         [Required(ErrorMessage = "Date is required")]
         public DateTime? dueDate { get; set; } 
 
+        [Required(ErrorMessage = "Urgency is required")]
+        public string urgency { get; set; } = string.Empty;
+        
         [Required(ErrorMessage = "Category is required")]
         public string categoryId { get; set; } = string.Empty;
         [ValidateNever] 

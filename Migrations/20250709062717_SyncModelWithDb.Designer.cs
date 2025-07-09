@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using tod.Models;
 
@@ -11,9 +12,11 @@ using tod.Models;
 namespace tod.Migrations
 {
     [DbContext(typeof(TodoContext))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20250709062717_SyncModelWithDb")]
+    partial class SyncModelWithDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

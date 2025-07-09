@@ -254,6 +254,17 @@
                                                 </a>
                                             </div>
                                         </th>
+                                        <th class="fw-bold text-center align-middle" style="font-size:1.6em; min-width: 200px; vertical-align: middle;"> 
+                                            <div class="d-flex flex-row align-items-center justify-content-center" style="gap:6px;">
+                                                <span>Urgency</span>
+                                                <a href="?sort=date_urgency" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;">
+                                                    <i class="bi bi-chevron-up" style="color: #007bff; font-size:1em;"></i>
+                                                </a>
+                                                <a href="?sort=urgency_desc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;">
+                                                    <i class="bi bi-chevron-down" style="color: #007bff; font-size:1em;"></i>
+                                                </a>
+                                            </div>
+                                        </th>
                                         <th class="fw-bold text-center align-middle" style="font-size:1.6em; vertical-align: middle;">Status</th>
                                         <th class="fw-bold text-center align-middle" style="font-size:1.6em; min-width: 140px; vertical-align: middle;">Assign To</th>
                                         <th class="fw-bold w-25 text-center align-middle" style="font-size:1.6em; vertical-align: middle;"></th>
@@ -283,6 +294,7 @@
                                             <td>@task.todDescription</td>
                                             <td>@task.Category.categoryName</td>
                                             <td>@task.dueDate?.ToString("MM/dd/yyyy")</td>
+                                            <td>@task.urgency</td>
                                             <td>
                                                 @task.Status.statusName
                                                 @if (task.dueDate.HasValue)

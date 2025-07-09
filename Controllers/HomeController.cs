@@ -242,6 +242,18 @@ public class HomeController : Controller
     }
 
     [HttpPost]
+    public IActionResult Add(Todo task, int? assignedUserId)
+    {
+        if (ModelState.IsValid)
+        {
+            context.Todos.Add(task);
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+ 
+    }
+
+    [HttpPost]
     public IActionResult Filter(string[] filter, string sort)
     {
         // filter dizisi artık 4 elemanlı olmalı

@@ -65,6 +65,15 @@
                 </select>
             </div>
         }
+        <div class="mb-3">
+            <label class="form-label" for="urgency">Urgency</label>
+                <select class="form-control" id="urgency" name="urgency" required>
+                  <option value="">Select Urgency</option>
+                  <option value="Normal">Normal</option>
+                  <option value="Urgent">Urgent</option>
+                  <option value="Very Urgent">Very Urgent</option>
+                </select>
+        </div>
         <button type="submit" class="btn btn-info">Add</button>
         <a asp-action="Index" class="btn btn-warning">Cancel</a>
     </form>
