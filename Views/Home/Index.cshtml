@@ -257,7 +257,7 @@
                                         <th class="fw-bold text-center align-middle" style="font-size:1.6em; min-width: 200px; vertical-align: middle;"> 
                                             <div class="d-flex flex-row align-items-center justify-content-center" style="gap:6px;">
                                                 <span>Urgency</span>
-                                                <a href="?sort=date_urgency" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;">
+                                                <a href="?sort=urgency_asc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;">
                                                     <i class="bi bi-chevron-up" style="color: #007bff; font-size:1em;"></i>
                                                 </a>
                                                 <a href="?sort=urgency_desc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;">
@@ -297,7 +297,7 @@
                                             <td>@task.urgency</td>
                                             <td>
                                                 @task.Status.statusName
-                                                @if (task.dueDate.HasValue)
+                                                @if (task.Status.statusId.ToLower() == "pending" && task.dueDate.HasValue)
                                                 {
                                                     var daysLeft = (task.dueDate.Value.Date - DateTime.Now.Date).TotalDays;
                                                     if (daysLeft >= 0 && daysLeft < 5)
@@ -321,11 +321,11 @@
                                                 }
                                             </td>
                                             <td>
-                                                @*<form asp-action="DeleteTask" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">
+                                                <form asp-action="DeleteTask" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">
                                                     <button type="submit" class="btn btn-outline-danger btn-sm" name="todId" value="@task.todId" title="Delete">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
-                                                </form> *@
+                                                </form> 
                                                 @if(task.Status.statusId == "pending")
                                                 {
                                                     <form asp-action="MarkComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">

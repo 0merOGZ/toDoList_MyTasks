@@ -100,6 +100,12 @@ public class HomeController : Controller
             case "name_desc":
                 query = query.OrderByDescending(t => t.todName);
                 break;
+            case "urgency_asc":
+                query = query.OrderBy(t => t.urgency);
+                break;
+            case "urgency_desc":
+                query = query.OrderByDescending(t => t.urgency);
+                break;  
             case "category_asc":
                 query = query.OrderBy(t => t.Category.categoryName);
                 break;
@@ -241,7 +247,7 @@ public class HomeController : Controller
         }
     }
 
-    [HttpPost]
+    /*[HttpPost]
     public IActionResult Add(Todo task, int? assignedUserId)
     {
         if (ModelState.IsValid)
@@ -251,7 +257,7 @@ public class HomeController : Controller
             return RedirectToAction("Index");
         }
  
-    }
+    }*/
 
     [HttpPost]
     public IActionResult Filter(string[] filter, string sort)
