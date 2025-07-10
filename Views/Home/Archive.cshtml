@@ -4,49 +4,279 @@
     ViewBag.Title = "Archived Tasks";
 }
 
-<div class="row">
-    <div class="col-md-12">
-        <div class="card mb-3" style="border-radius: 2.5rem;">
-            <div class="card-header fw-bold text-center" style="font-size:2.5em; background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 2.5rem 2.5rem 0 0; color: white;">Archived Tasks</div>
-            <div style="height:0.5rem;"></div>
-            <div class="card-body">
-                <table class="table table-bordered table-striped mt-2 rounded-3 overflow-hidden">
-                    <thead>
-                        <tr>
-                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Name</th>
-                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Description</th>
-                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Category</th>
-                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Due Date</th>
-                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Status</th>
-                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Assigned To</th>
-                            <th class="fw-bold text-center align-middle" style="font-size:1.6em;">Archived Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var task in Model)
-                        {
+<style>
+    .archive-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .archive-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        border-radius: 2rem;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .archive-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .archive-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .archive-header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+    }
+    
+    .archive-header h1 {
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+    }
+    
+    .archive-body {
+        padding: 2rem;
+    }
+    
+    .modern-table {
+        background: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border: none;
+    }
+    
+    .modern-table thead {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+    
+    .modern-table th {
+        padding: 1.5rem 1rem;
+        font-weight: 600;
+        color: #374151;
+        border: none;
+        font-size: 1.1rem;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .modern-table td {
+        padding: 1rem;
+        border: none;
+        border-bottom: 1px solid #f1f5f9;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .modern-table tbody tr:hover {
+        background: #f8fafc;
+        transform: scale(1.01);
+        transition: all 0.2s ease;
+    }
+    
+    .modern-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+    
+    .status-badge {
+        padding: 0.375rem 0.75rem;
+        border-radius: 50px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    
+    .status-completed {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        color: white;
+    }
+    
+    .status-pending {
+        background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        color: white;
+    }
+    
+    .category-badge {
+        padding: 0.25rem 0.75rem;
+        border-radius: 50px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+    }
+    
+    .date-cell {
+        font-family: 'Monaco', 'Menlo', monospace;
+        color: #6b7280;
+        font-size: 0.9rem;
+    }
+    
+    .user-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .user-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    
+    .empty-state {
+        text-align: center;
+        padding: 4rem 2rem;
+        color: #6b7280;
+    }
+    
+    .empty-state i {
+        font-size: 4rem;
+        color: #d1d5db;
+        margin-bottom: 1rem;
+    }
+    
+    @@media (max-width: 768px) {
+        .archive-container {
+            padding: 1rem;
+        }
+        
+        .archive-body {
+            padding: 1rem;
+        }
+        
+        .archive-header h1 {
+            font-size: 2rem;
+        }
+        
+        .modern-table th,
+        .modern-table td {
+            padding: 0.75rem 0.5rem;
+            font-size: 0.875rem;
+        }
+    }
+</style>
+
+<div class="archive-container">
+    <div class="archive-card">
+        <div class="archive-header">
+            <h1><i class="bi bi-archive me-3"></i>Archived Tasks</h1>
+        </div>
+        <div class="archive-body">
+            @if (Model != null && Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table modern-table">
+                        <thead>
                             <tr>
-                                <td>@task.todName</td>
-                                <td>@task.todDescription</td>
-                                <td>@task.Category?.categoryName</td>
-                                <td>@task.dueDate?.ToString("MM/dd/yyyy")</td>
-                                <td>@task.Status?.statusName</td>
-                                <td>
-                                    @if (task.User != null)
-                                    {
-                                        <span>@task.User.userName (@task.User.userMail)</span>
-                                    }
-                                    else
-                                    {
-                                        <span>Atanmadı</span>
-                                    }
-                                </td>
-                                <td>@task.ArchivedDate?.ToString("MM/dd/yyyy HH:mm")</td>
+                                <th><i class="bi bi-card-text me-2"></i>Name</th>
+                                <th><i class="bi bi-file-text me-2"></i>Description</th>
+                                <th><i class="bi bi-tags me-2"></i>Category</th>
+                                <th><i class="bi bi-calendar-event me-2"></i>Due Date</th>
+                                <th><i class="bi bi-check-circle me-2"></i>Status</th>
+                                <th><i class="bi bi-person me-2"></i>Assigned To</th>
+                                <th><i class="bi bi-clock me-2"></i>Archived Date</th>
                             </tr>
-                        }
-                    </tbody>
-                </table>
-            </div>
+                        </thead>
+                        <tbody>
+                            @foreach (var task in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <strong>@task.todName</strong>
+                                    </td>
+                                    <td>@task.todDescription</td>
+                                    <td>
+                                        @if (task.Category != null)
+                                        {
+                                            <span class="category-badge">@task.Category.categoryName</span>
+                                        }
+                                    </td>
+                                    <td class="date-cell">
+                                        @if (task.dueDate.HasValue)
+                                        {
+                                            @task.dueDate.Value.ToString("MM/dd/yyyy")
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">No due date</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (task.Status != null)
+                                        {
+                                            <span class="status-badge @(task.Status.statusName.ToLower() == "completed" ? "status-completed" : "status-pending")">
+                                                @task.Status.statusName
+                                            </span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (task.User != null)
+                                        {
+                                            <div class="user-info">
+                                                <div class="user-avatar">
+                                                    @task.User.userName.Substring(0, 1).ToUpper()
+                                                </div>
+                                                <div>
+                                                    <div style="font-weight: 500;">@task.User.userName</div>
+                                                    <div style="font-size: 0.8rem; color: #6b7280;">@task.User.userMail</div>
+                                                </div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">Unassigned</span>
+                                        }
+                                    </td>
+                                    <td class="date-cell">
+                                        @if (task.ArchivedDate.HasValue)
+                                        {
+                                            @task.ArchivedDate.Value.ToString("MM/dd/yyyy HH:mm")
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="empty-state">
+                    <i class="bi bi-archive"></i>
+                    <h3>No Archived Tasks</h3>
+                    <p>Completed tasks will appear here when archived.</p>
+                </div>
+            }
         </div>
     </div>
-</div> 
+</div>

@@ -1,64 +1,314 @@
 @{
     ViewData["Title"] = "Sign In";
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body style="background-image: url(https://images.ctfassets.net/nnkxuzam4k38/219VUMa1SOxASKqCE2OgT4/be1c810344587bd7f6f203337d23602a/ranger-4df6c1b6.png); background-repeat: no-repeat; background-size: cover;">
-    <br><br> 
-    <form action="" method="post" style="background-image: url(https://t3.ftcdn.net/jpg/02/94/52/66/360_F_294526635_8Fc9IbBHWOC83JsiFNRNx5VivafEjiyi.jpg);
-    background-repeat: no-repeat; background-size: cover; padding: 1px; border: 2px solid black; max-width: 500px; margin: 20px auto; 
-    box-sizing: border-box; border-radius: 20px;" width="1" height="40">
-            <h2 align="center">Sign Form</h2>
-            <p style="color: rgb(7, 7, 26);" align="center">Please fill out the form:</p>
-          <br><br>
-          <div align="center">
-            <div style="display: inline-block; background-color: lightseagreen; padding: 10px; border-radius: 20px;">
-            <br><br>
-            <label for="name">Full Name:</label>
-            <input type="text" id="userName" name="userName" placeholder="Enter your name" required>
-            <br><br>    
-            <label for="mail">Mail:</label>
-            <input type="email" id="mail" name="mail" placeholder="ex@gmail.com" required>
-            <br><br>
-            <label for="role">Role</label>
-            <select id="userRole" name="userRole" placeholder="Select your role" required>
-                <option value="erkek">Team Leader</option>
-                <option value="kadin">Team Member</option>
-            </select>
-            <br><br>
-            <div id="invitationCodeDiv" style="display:none;">
-                <label for="invitationCode">Team Invitation Code:</label>
-                <input type="text" id="invitationCode" name="invitationCode" maxlength="5" placeholder="Enter code">
-                <br><br>
-            </div>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Create a password" required>
-            <br><br>
-            <button type="submit">Create An Account</button>
-            <button type="reset">Reset</button>
-            <br><br> 
-           </div> 
-         </div><br><br> 
-        </form>
-<script>
-    function toggleInvitationCode() {
-        var role = document.getElementById('userRole').value;
-        var codeDiv = document.getElementById('invitationCodeDiv');
-        if (role === 'kadin') {
-            codeDiv.style.display = 'block';
-        } else {
-            codeDiv.style.display = 'none';
+
+<style>
+    .signin-page {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .signin-page::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80') center center/cover no-repeat;
+        opacity: 0.1;
+        z-index: 1;
+    }
+    
+    .signin-container {
+        position: relative;
+        z-index: 2;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .signin-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        border-radius: 2rem;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .signin-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .signin-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 3rem 2rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .signin-header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+    }
+    
+    .signin-header > * {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .signin-header h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.02em;
+    }
+    
+    .signin-header p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+        margin: 0;
+    }
+    
+    .signin-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        animation: pulse 2s infinite;
+    }
+    
+    @@keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+    
+    .signin-form {
+        padding: 3rem 2rem;
+    }
+    
+    .form-group {
+        margin-bottom: 2rem;
+    }
+    
+    .form-label {
+        display: block;
+        margin-bottom: 0.75rem;
+        font-weight: 500;
+        color: #374151;
+        font-size: 1rem;
+    }
+    
+    .form-control {
+        width: 100%;
+        padding: 1rem 1.25rem;
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background: #fafafa;
+    }
+    
+    .form-control:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        background: white;
+    }
+    
+    .form-control::placeholder {
+        color: #9ca3af;
+    }
+    
+    .form-select {
+        width: 100%;
+        padding: 1rem 1.25rem;
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background: #fafafa;
+        cursor: pointer;
+    }
+    
+    .form-select:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        background: white;
+    }
+    
+    .btn-signin {
+        width: 100%;
+        padding: 1rem 2rem;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+    
+    .btn-signin:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    }
+    
+    .btn-reset {
+        width: 100%;
+        padding: 1rem 2rem;
+        background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .btn-reset:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(107, 114, 128, 0.4);
+    }
+    
+    .input-group {
+        position: relative;
+    }
+    
+    .input-group i {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #9ca3af;
+        font-size: 1.1rem;
+    }
+    
+    .input-group .form-control,
+    .input-group .form-select {
+        padding-left: 3rem;
+    }
+    
+    .invitation-code-section {
+        background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        border-radius: 12px;
+        padding: 1.5rem;
+        border: 1px solid rgba(245, 158, 11, 0.2);
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+    }
+    
+    .invitation-code-section.hidden {
+        display: none;
+    }
+    
+    @@media (max-width: 768px) {
+        .signin-container {
+            padding: 1rem;
+        }
+        
+        .signin-form {
+            padding: 2rem 1.5rem;
+        }
+        
+        .signin-header {
+            padding: 2rem 1.5rem;
+        }
+        
+        .signin-header h2 {
+            font-size: 2rem;
         }
     }
+</style>
+
+<div class="signin-page">
+    <div class="signin-container">
+        <div class="signin-card">
+            <div class="signin-header">
+                <i class="bi bi-person-plus signin-icon"></i>
+                <h2>Create Account</h2>
+                <p>Join us and start managing your tasks</p>
+            </div>
+            <div class="signin-form">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="userName" class="form-label">
+                            <i class="bi bi-person me-2"></i>Full Name
+                        </label>
+                        <div class="input-group">
+                            <i class="bi bi-person"></i>
+                            <input type="text" id="userName" name="userName" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mail" class="form-label">
+                            <i class="bi bi-envelope me-2"></i>Email Address
+                        </label>
+                        <div class="input-group">
+                            <i class="bi bi-envelope"></i>
+                            <input type="email" id="mail" name="mail" class="form-control" placeholder="ex@gmail.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userRole" class="form-label">
+                            <i class="bi bi-briefcase me-2"></i>Role
+                        </label>
+                        <div class="input-group">
+                            <i class="bi bi-briefcase"></i>
+                            <select id="userRole" name="userRole" class="form-select" required>
+                                <option value="">Select your role</option>
+                                <option value="erkek">Team Leader</option>
+                                <option value="kadin">Team Member</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password" class="form-label">
+                            <i class="bi bi-lock me-2"></i>Password
+                        </label>
+                        <div class="input-group">
+                            <i class="bi bi-lock"></i>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Create a password" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-signin">
+                        <i class="bi bi-person-plus me-2"></i>Create Account
+                    </button>
+                    <button type="reset" class="btn-reset">
+                        <i class="bi bi-arrow-clockwise me-2"></i>Reset Form
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // toggleInvitationCode fonksiyonu kaldırıldı
+    
     document.addEventListener('DOMContentLoaded', function() {
-        toggleInvitationCode();
+        // toggleInvitationCode(); // Bu satır kaldırıldı
     });
 </script>
-</body>
-</html>

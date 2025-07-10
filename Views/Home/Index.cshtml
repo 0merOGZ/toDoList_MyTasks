@@ -1,353 +1,1012 @@
 ﻿@model IEnumerable<Todo>
 
-<div class="row">
-    @if (ViewBag.IsLoggedIn ?? false)
-    {
-        <div class="col-md-4">
-            <div class="card mb-3" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
-                <div class="card-header fw-bold text-center" style="font-size:2.5em; 
-                background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-                border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">Filter</div>
-                <div style="height:0.5rem;"></div>
-                <div class="card-body">
-                    <form asp-action="Filter" method="post" style="background-color: #a1e7f2; border-radius: 2.5rem; padding: 1.5rem; width: 100%;">
-                        <div class="row">
-                            <div class="col-6 mb-3">
-                                <label class="form-label" style="font-size:1.3em; font-weight:bold;">Category</label>
-                                <select name="filter" class="form-select"
-                                    asp-items="@(new SelectList(ViewBag.Categories,"categoryId","categoryName",ViewBag.Filters.categoryID))">
-                                    @if (ViewBag.Filters.categoryID == null || ViewBag.Filters.categoryID == "all") {
-                                        <option value="all" selected>All</option>
-                                    } else {
-                                        <option value="all">All</option>
-                                    }
-                                </select>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <label class="form-label" style="font-size:1.3em; font-weight:bold;">Due Date</label>
-                                <select name="filter" class="form-select"
-                                    asp-items="@(new SelectList(ViewBag.DueFilters, "Key", "Value", ViewBag.Filters.dueDate))">
-                                    @if (ViewBag.Filters.dueDate == null || ViewBag.Filters.dueDate == "all") {
-                                        <option value="all" selected>All</option>
-                                    } else {
-                                        <option value="all">All</option>
-                                    }
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 mb-3">
-                                <label class="form-label" style="font-size:1.3em; font-weight:bold;">Status</label>
-                                <select name="filter" class="form-select"
-                                    asp-items="@(new SelectList(ViewBag.Statuses, "statusId", "statusName", ViewBag.Filters.statusID))">
-                                    @if (ViewBag.Filters.statusID == null || ViewBag.Filters.statusID == "all") {
-                                        <option value="all" selected>All</option>
-                                    } else {
-                                        <option value="all">All</option>
-                                    }
-                                </select>
-                            </div>
-                            <div class="col-6 mb-3">
-                                <label class="form-label" style="font-size:1.3em; font-weight:bold;">Due In</label>
-                                <select name="filter" class="form-select">
-                                    @if (ViewBag.Filters.dueIn == null || ViewBag.Filters.dueIn == "all") {
-                                        <option value="all" selected>All</option>
-                                    } else {
-                                        <option value="all">All</option>
-                                    }
-                                    @if (ViewBag.Filters.dueIn == "5") {
-                                        <option value="5" selected>5 Days</option>
-                                    } else {
-                                        <option value="5">5 Days</option>
-                                    }
-                                    @if (ViewBag.Filters.dueIn == "15") {
-                                        <option value="15" selected>15 Days</option>
-                                    } else {
-                                        <option value="15">15 Days</option>
-                                    }
-                                    @if (ViewBag.Filters.dueIn == "30") {
-                                        <option value="30" selected>30 Days</option>
-                                    } else {
-                                        <option value="30">30 Days</option>
-                                    }
-                                    @if (ViewBag.Filters.dueIn == "90") {
-                                        <option value="90" selected>90 Days</option>
-                                    } else {
-                                        <option value="90">90 Days</option>
-                                    }
-                                </select>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="font-size:1.2em; font-weight:bold; padding:0.6em 1.2em;">Filter</button>
-                        <a asp-action="Index" asp-route-id="" class="btn btn-warning" style="font-size:1.2em; font-weight:bold; padding:0.6em 1.2em;">Clear</a>
-                    </form>
-                </div>
-            </div>
-        </div>
+<style>
+    .dashboard-outer {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
     }
-    @if (!(ViewBag.IsLoggedIn ?? false))
-    {
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card mb-3" style="border-radius: 2.5rem;">
-                    <div class="card-header fw-bold text-center" style="font-size:2.5em; background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 2.5rem 2.5rem 0 0; color: white;">User Management</div>
-                    <div style="height:0.5rem;"></div>
-                    <div class="card-body">
-                        <form asp-action="LogIn" method="post" style="background-image: url(https://t3.ftcdn.net/jpg/02/94/52/66/360_F_294526635_8Fc9IbBHWOC83JsiFNRNx5VivafEjiyi.jpg); background-repeat: no-repeat; background-size: cover; padding: 1px; border: 2px solid black; max-width: 500px; margin: 20px auto; box-sizing: border-box; border-radius: 20px;">
-                            <h2 align="center">Login</h2>
-                            <p style="color: rgb(7, 7, 26);" align="center">Please fill out the form:</p>
-                            <div align="center">
-                                <div style="display: inline-block; background-color: lightseagreen; padding: 10px; border-radius: 20px;">
-                                    <label for="mail">Mail:</label>
-                                    <input type="email" id="mail" name="mail" placeholder="ex@gmail.com" required>
-                                    <br><br>
-                                    <label for="password">Password:</label>
-                                    <input type="password" id="password" name="password" placeholder="************" required>
-                                    <br><br>
-                                    <button type="submit">Login</button>
-                                    <a asp-action="SignIn" class="btn btn-success" style="margin-left:10px;">Sign Up</a>
-                                    <br><br>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+    .dashboard-inner {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
-    @if (ViewBag.IsLoggedIn ?? false)
-    {
-        <div class="col-md-8"> 
-            <div class="card mb-3" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
-                <div class="card-header fw-bold text-center" style="font-size:2.5em; 
-                background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-                border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">User Management</div>
-                <div style="height:0.5rem;"></div>
-                <div class="card-body">
-                    <div style="background: #e0f7fa; border-radius: 20px; padding: 1.5em; text-align:center;">
-                        <h3>Welcome, <b>@ViewBag.UserName</b>!</h3>
-                        <p>Role: <b>@ViewBag.UserRole</b></p>
-                        @if (!string.IsNullOrEmpty((string)ViewBag.TeamName))
-                        {
-                            <p>Team: <b>@ViewBag.TeamName</b></p>
-                        }
-                        @if ((string)ViewBag.UserRole == "Team Leader" && !string.IsNullOrEmpty((string)ViewBag.TeamInvitationCode))
-                        {
-                            <p>Invitation Code: <b>@ViewBag.TeamInvitationCode</b></p>
-                        }
-                        <form asp-action="LogOut" method="post" style="display:inline;">
-                            <button type="submit" class="btn btn-danger" style="font-size:1.5em;">Logout</button>
-                        </form>
-                    </div>
-                    @if ((ViewBag.UserRole as string) == "Team Member" && string.IsNullOrEmpty((string)ViewBag.TeamName))
-                    {
-                        <button class="btn btn-warning" style="font-size:1.2em; margin-top:1em;" data-bs-toggle="modal" data-bs-target="#joinTeamModal">Join Team</button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="joinTeamModal" tabindex="-1" aria-labelledby="joinTeamModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="joinTeamModalLabel">Join a Team</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <form asp-action="JoinTeam" method="post">
-                                <div class="modal-body">
-                                  <label for="joinInvitationCode">Team Invitation Code:</label>
-                                  <input type="text" id="joinInvitationCode" name="invitationCode" maxlength="5" class="form-control" required>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                  <button type="submit" class="btn btn-primary">Join</button>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                    }
-                </div>
-            </div>
-            @if (ViewBag.IsLoggedIn ?? false)
-            {
-                <div class="card mb-3" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
-                    <div class="card-header fw-bold text-center" style="font-size:2.5em; 
-                    background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-                    border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">Task Management</div>
-                    <div style="height:0.5rem;"></div>
-                    <div class="card-body">
-                        <form asp-action="DeleteComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString" class="d-inline w-100">
-                            <a asp-action="Add" class="btn btn-primary" style="font-size:1.5em;">Add a New Task</a>
-                            <button type="submit" class="btn btn-danger" style="font-size:1.5em;">Delete All Completed Tasks</button>
-                            <a class="btn btn-success float-end" href="https://calendar.google.com/calendar/u/0/r?pli=1" style="font-size:1.5em;"
-                            target="=_blank">Set a Reminder</a> 
-                            <br><br>
-                        </form>
-                    </div>
-                </div>
-                <div class="card" style="border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;">
-                    <div class="card-header fw-bold d-flex justify-content-between align-items-center text-center" style="font-size:2em; 
-                    background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
-                    border-radius: 2.5rem 2.5rem 0 0; color: white; font-size:2.5em;">
-                        <div class="d-flex align-items-center" style="gap: 0.5em;">
-                            <span>
-                                <span class="badge bg-success" style="width:1.0em; height:1.0em; display:inline-block; border-radius:50%;"></span>
-                                <span style="font-size:0.5em;">Completed</span>
-                            </span>
-                            <span>
-                                <span class="badge bg-warning" style="width:1.0em; height:1.0em; display:inline-block; border-radius:50%;"></span>
-                                <span style="font-size:0.5em;">Pending</span>
-                            </span>
-                            <span>
-                                <span class="badge bg-danger" style="width:1.0em; height:1.0em; display:inline-block; border-radius:50%;"></span>
-                                <span style="font-size:0.5em;">Overdue</span>
-                            </span>
-                            <span class="ms-5">
-                                <span class="ms-5"></span>
-                                <span class="ms-3"></span>
-                            <i class="bi bi-list-task"></i> Tasks</span>
-                        </div>
-                        <div style="font-size:1em; margin-left: 1.5em;">
-                            
-                        </div>
-                        <span style="font-size:0.7em;">
-                            <span style="background: #28a745; color: white; border-radius: 1.5em; padding: 0.4em 0.4em; font-weight: bold; font-size:0.7em; display: inline-block; min-width: 20px; text-align: center;">
-                                @ViewBag.CompletedCount/@ViewBag.TotalCount
-                            </span>
-                        </span>
-                    </div>
-                    <div style="height:0.5rem;"></div>
-                    <div class="card-body">
-                        <form asp-action="MarkComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString">
-                            <table class="table table-bordered table-striped mt-2 rounded-3 overflow-hidden"> 
-                                <thead> 
-                                    <tr>
-                                        <th class="fw-bold text-center align-middle" style="font-size:1.6em; vertical-align: middle;">
-                                            <div class="d-flex flex-row align-items-center justify-content-center" style="gap:6px;">
-                                                <span>Name</span>
-                                                <a href="?sort=name_asc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort A-Z">
-                                                    <i class="bi bi-chevron-up" style="color: #007bff; font-size:1em;"></i>
-                                                </a>
-                                                <a href="?sort=name_desc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort Z-A">
-                                                    <i class="bi bi-chevron-down" style="color: #007bff; font-size:1em;"></i>
-                                                </a>
-                                            </div>
-                                        </th>
-                                        <th class="fw-bold text-center align-middle" style="font-size:1.6em; vertical-align: middle;">Description</th>
-                                        <th class="fw-bold text-center align-middle" style="font-size:1.6em; vertical-align: middle;">
-                                            <div class="d-flex flex-row align-items-center justify-content-center" style="gap:6px;">
-                                                <span>Category</span>
-                                                <a href="?sort=category_asc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort A-Z">
-                                                    <i class="bi bi-chevron-up" style="color: #007bff; font-size:1em;"></i>
-                                                </a>
-                                                <a href="?sort=category_desc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort Z-A">
-                                                    <i class="bi bi-chevron-down" style="color: #007bff; font-size:1em;"></i>
-                                                </a>
-                                            </div>
-                                        </th>
-                                        <th class="fw-bold text-center align-middle" style="font-size:1.6em; min-width: 200px; vertical-align: middle;"> 
-                                            <div class="d-flex flex-row align-items-center justify-content-center" style="gap:6px;">
-                                                <span>Due Date</span>
-                                                <a href="?sort=date_asc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort A-Z">
-                                                    <i class="bi bi-chevron-up" style="color: #007bff; font-size:1em;"></i>
-                                                </a>
-                                                <a href="?sort=date_desc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;" title="Sort Z-A">
-                                                    <i class="bi bi-chevron-down" style="color: #007bff; font-size:1em;"></i>
-                                                </a>
-                                            </div>
-                                        </th>
-                                        <th class="fw-bold text-center align-middle" style="font-size:1.6em; min-width: 200px; vertical-align: middle;"> 
-                                            <div class="d-flex flex-row align-items-center justify-content-center" style="gap:6px;">
-                                                <span>Urgency</span>
-                                                <a href="?sort=urgency_asc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;">
-                                                    <i class="bi bi-chevron-up" style="color: #007bff; font-size:1em;"></i>
-                                                </a>
-                                                <a href="?sort=urgency_desc" class="btn btn-light btn-sm rounded-circle p-0 ms-1" style="width:1.5em; height:1.5em;">
-                                                    <i class="bi bi-chevron-down" style="color: #007bff; font-size:1em;"></i>
-                                                </a>
-                                            </div>
-                                        </th>
-                                        <th class="fw-bold text-center align-middle" style="font-size:1.6em; vertical-align: middle;">Status</th>
-                                        <th class="fw-bold text-center align-middle" style="font-size:1.6em; min-width: 140px; vertical-align: middle;">Assign To</th>
-                                        <th class="fw-bold w-25 text-center align-middle" style="font-size:1.6em; vertical-align: middle;"></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach(Todo task in Model)
-                                    {
-                                        string rowClass = "";
-                                        if (task.Status.statusId.ToLower() == "completed")
-                                        {
-                                            rowClass = "table-success"; // yeşil
-                                        }
-                                        else if (task.Status.statusId.ToLower() == "pending")
-                                        {
-                                            if (task.dueDate.HasValue && task.dueDate.Value < DateTime.Now)
-                                            {
-                                                rowClass = "table-danger"; // kırmızı
-                                            }
-                                            else if (task.dueDate.HasValue && task.dueDate.Value >= DateTime.Now)
-                                            {
-                                                rowClass = "table-warning"; // sarı
-                                            }
-                                        }
-                                        <tr class="@rowClass">
-                                            <td>@task.todName</td>
-                                            <td>@task.todDescription</td>
-                                            <td>@task.Category.categoryName</td>
-                                            <td>@task.dueDate?.ToString("MM/dd/yyyy")</td>
-                                            <td>@task.urgency</td>
-                                            <td>
-                                                @task.Status.statusName
-                                                @if (task.Status.statusId.ToLower() == "pending" && task.dueDate.HasValue)
-                                                {
-                                                    var daysLeft = (task.dueDate.Value.Date - DateTime.Now.Date).TotalDays;
-                                                    if (daysLeft >= 0 && daysLeft < 5)
-                                                    {
-                                                        <span style="color:red; font-weight:bold;"> (Kalan: @daysLeft gün)</span>
-                                                    }
-                                                    else if (daysLeft >= 5 && daysLeft <= 14)
-                                                    {
-                                                        <span> (Kalan: @daysLeft gün)</span>
-                                                    }
-                                                }
-                                            </td>
-                                            <td>
-                                                @if (task.User != null)
-                                                {
-                                                    <span>@task.User.userName (@task.User.userMail)</span>
-                                                }
-                                                else
-                                                {
-                                                    <span>Atanmadı</span>
-                                                }
-                                            </td>
-                                            <td>
-                                                <form asp-action="DeleteTask" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">
-                                                    <button type="submit" class="btn btn-outline-danger btn-sm" name="todId" value="@task.todId" title="Delete">
-                                                        <i class="bi bi-trash"></i>
-                                                    </button>
-                                                </form> 
-                                                @if(task.Status.statusId == "pending")
-                                                {
-                                                    <form asp-action="MarkComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">
-                                                        <button type="submit" class="btn btn-info btn-sm" name="todId" value="@task.todId">Mark as Completed</button>
-                                                    </form>
-                                                }
-                                                else if(task.Status.statusId == "completed")
-                                                {
-                                                    <form asp-action="Unmark" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">
-                                                        <button type="submit" class="btn btn-warning btn-sm" name="todId" value="@task.todId">Unmark</button>
-                                                    </form>
-                                                }    
-                                            </td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </form>
-                    </div>
-                </div>
-            }
-        </div>
+    .dashboard-row {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
     }
-</div>
+    .dashboard-col {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    .dashboard-table-row {
+        display: flex;
+        gap: 1rem;
+    }
+    .dashboard-table-col {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    @@media (max-width: 1200px) {
+        .dashboard-inner {
+            width: 98vw;
+            margin-left: 1vw;
+            margin-right: 1vw;
+        }
+    }
+    @@media (max-width: 992px) {
+        .dashboard-row, .dashboard-table-row {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+    .dashboard-container {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    }
+    .modern-card {
+        background: #9fccfa;
+        backdrop-filter: blur(24px);
+        border-radius: 2rem;
+        box-shadow: 0 8px 32px rgba(79, 140, 255, 0.18), 0 1.5px 8px rgba(43, 46, 236, 0.10);
+        border: 2px solid #4f8cff22;
+        overflow: hidden;
+        transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+        margin-bottom: 2rem;
+    }
+    .modern-card:hover {
+        transform: translateY(-7px) scale(1.01);
+        box-shadow: 0 16px 48px rgba(79, 140, 255, 0.25), 0 2px 12px rgba(43, 46, 236, 0.13);
+    }
+    .card-header-modern {
+        background: linear-gradient(135deg, #4f8cff 0%, #2b2eec 100%);
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        border-bottom: 3px solid #2b2eec;
+    }
+    .card-header-modern::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        z-index: 1;
+    }
+    .card-header-modern h1,
+    .card-header-modern h2,
+    .card-header-modern .task-header {
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        text-shadow: 0 2px 8px #2b2eec33;
+    }
+    .card-body-modern {
+        padding: 2rem;
+    }
+    .login-form {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .login-form::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+    }
+    
+    .login-form > * {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .login-form h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    .login-form p {
+        margin-bottom: 2rem;
+        opacity: 0.9;
+    }
+    
+    .form-group-login {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group-login label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .form-group-login input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+    
+    .form-group-login input::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .form-group-login input:focus {
+        outline: none;
+        border-color: rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .btn-login {
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    
+    .btn-login:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        color: white;
+    }
+    
+    .btn-signup {
+        background: rgba(245, 158, 11, 0.9);
+        border: 2px solid rgba(245, 158, 11, 0.5);
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .btn-signup:hover {
+        background: rgba(245, 158, 11, 1);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+        color: white;
+    }
+    
+    .filter-form {
+        background: linear-gradient(135deg, #e3f0ff 0%, #b3d1ff 100%);
+        border-radius: 1.5rem;
+        padding: 2rem;
+        border: 1px solid rgba(14, 165, 233, 0.1);
+    }
+    
+    .filter-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .filter-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: #374151;
+    }
+    
+    .filter-group select {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        background: white;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+    
+    .filter-group select:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+    
+    .btn-filter {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        font-weight: 500;
+        border: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+    
+    .btn-filter:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    }
+    
+    .btn-clear {
+        background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        font-weight: 500;
+        border: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .btn-clear:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+        color: white;
+    }
+    
+    .user-welcome {
+        background: linear-gradient(135deg, #e3f0ff 0%, #b3d1ff 100%);
+        border-radius: 1.5rem;
+        padding: 2rem;
+        text-align: center;
+        border: 1px solid #4f8cff33;
+        margin-bottom: 2rem;
+        color: #2b2eec;
+        box-shadow: 0 2px 8px #4f8cff22;
+    }
+    
+    .user-welcome h3 {
+        color: #2b2eec;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-shadow: 0 1px 4px #4f8cff22;
+    }
+    
+    .user-welcome p {
+        color: #4f8cff;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .btn-logout {
+        background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        font-weight: 500;
+        border: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+    
+    .btn-logout:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
+    }
+    
+    .task-actions {
+        background: linear-gradient(135deg, #e3f0ff 0%, #b3d1ff 100%);
+        border-radius: 1.5rem;
+        padding: 2rem;
+        border: 1px solid rgba(245, 158, 11, 0.1);
+    }
+    
+    .btn-action {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        font-weight: 500;
+        border: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .btn-action:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        color: white;
+    }
+    
+    .btn-danger {
+        background: linear-gradient(135deg, #ff1744 0%, #d50000 100%);
+        color: #fff !important;
+    }
+    
+    .btn-danger:hover {
+        background: linear-gradient(135deg, #d50000 0%, #ff1744 100%);
+        color: #fff !important;
+    }
+    
+    .btn-success {
+        background: linear-gradient(135deg, #00e676 0%, #00bfa5 100%);
+        color: #fff !important;
+    }
+    
+    .btn-success:hover {
+        background: linear-gradient(135deg, #00bfa5 0%, #00e676 100%);
+        color: #fff !important;
+    }
+    
+    .task-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .task-stats {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .stat-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+    
+    .stat-dot.completed {
+        background: #00e676;
+    }
+    
+    .stat-dot.pending {
+        background: #ffd600;
+    }
+    
+    .stat-dot.overdue {
+        background: #ff1744;
+    }
+    
+    .task-count {
+        background: #00bfa5;
+        color: #fff;
+        padding: 0.25rem 0.75rem;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        box-shadow: 0 1px 4px #00bfa544;
+    }
+    
+    .modern-table {
+        background: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border: none;
+    }
+    
+    .modern-table thead {
+        background: linear-gradient(135deg, #e3f0ff 0%, #b3d1ff 100%);
+    }
+    
+    .modern-table th {
+        padding: 1.5rem 1rem;
+        font-weight: 700;
+        color: #2b2eec;
+        border: none;
+        font-size: 1.1rem;
+        text-align: center;
+        vertical-align: middle;
+        background: linear-gradient(135deg, #e3f0ff 0%, #b3d1ff 100%);
+        text-shadow: 0 1px 4px #4f8cff22;
+    }
+    
+    .modern-table td {
+        padding: 1rem;
+        border: none;
+        border-bottom: 1px solid #e3f0ff;
+        vertical-align: middle;
+        text-align: center;
+        background: #fff;
+    }
+    
+    .modern-table tbody tr:hover {
+        background: #e3f0ff;
+        transform: scale(1.01);
+    }
+    
+    .modern-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+    
+    .sort-btn {
+        background: rgba(102, 126, 234, 0.1);
+        border: 1px solid rgba(102, 126, 234, 0.2);
+        color: #667eea;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        margin-left: 0.25rem;
+    }
+    
+    .sort-btn:hover {
+        background: rgba(102, 126, 234, 0.2);
+        color: #667eea;
+        transform: translateY(-1px);
+    }
+    
+    .table-success {
+        background: rgba(16, 185, 129, 0.1) !important;
+        border-left: 4px solid #10b981;
+    }
+    
+    .table-warning {
+        background: rgba(245, 158, 11, 0.1) !important;
+        border-left: 4px solid #f59e0b;
+    }
+    
+    .table-danger {
+        background: rgba(239, 68, 68, 0.1) !important;
+        border-left: 4px solid #ef4444;
+    }
+    
+    .btn-table {
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-weight: 500;
+        border: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 0.5rem;
+        font-size: 0.875rem;
+    }
+    
+    .btn-table:hover {
+        transform: translateY(-1px);
+    }
+    
+    .btn-table.btn-outline-danger {
+        background: rgba(239, 68, 68, 0.1);
+        border: 1px solid rgba(239, 68, 68, 0.3);
+        color: #ef4444;
+    }
+    
+    .btn-table.btn-outline-danger:hover {
+        background: #ef4444;
+        color: white;
+        box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+    }
+    
+    .btn-table.btn-info {
+        background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+        color: white;
+    }
+    
+    .btn-table.btn-info:hover {
+        box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4);
+    }
+    
+    .btn-table.btn-warning {
+        background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        color: white;
+    }
+    
+    .btn-table.btn-warning:hover {
+        box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+    }
+    
+    .modal-content {
+        border-radius: 1.5rem;
+        border: none;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .modal-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 1.5rem 1.5rem 0 0;
+        border: none;
+    }
+    
+    .modal-title {
+        font-weight: 600;
+    }
+    
+    .btn-close {
+        filter: brightness(0) invert(1);
+    }
+    
+    .modal-body {
+        padding: 2rem;
+    }
+    
+    .modal-footer {
+        border: none;
+        padding: 1rem 2rem 2rem;
+    }
+    
+    @@media (max-width: 768px) {
+        .dashboard-container {
+            padding: 1rem;
+        }
+        
+        .card-body-modern {
+            padding: 1.5rem;
+        }
+        
+        .task-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .task-stats {
+            flex-wrap: wrap;
+        }
+        
+        .modern-table th,
+        .modern-table td {
+            padding: 0.75rem 0.5rem;
+            font-size: 0.875rem;
+        }
+        
+        .btn-action {
+            margin-bottom: 1rem;
+        }
+    }
+    .side-half-row {
+        display: flex;
+        gap: 1rem;
+    }
+    .side-half {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    @@media (max-width: 992px) {
+        .side-half-row {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+    .alert-danger {
+        background: linear-gradient(135deg, #ff1744 0%, #ffd6d6 100%);
+        color: #b71c1c;
+        border: none;
+        font-weight: 600;
+        box-shadow: 0 2px 8px #ff174422;
+    }
+</style>
 
+<div class="dashboard-outer">
+    <div class="dashboard-inner">
+        @if (ViewBag.IsLoggedIn ?? false)
+        {
+            <div class="dashboard-row">
+                <div class="dashboard-col">
+                    <div class="modern-card mb-4">
+                        <div class="card-header-modern">
+                            <h2><i class="bi bi-person-circle me-2"></i>User Management</h2>
+                        </div>
+                        <div class="card-body-modern">
+                            <div class="user-welcome">
+                                <h3><i class="bi bi-hand-thumbs-up me-2"></i>Welcome, <strong>@ViewBag.UserName</strong>!</h3>
+                                <p><i class="bi bi-award me-2"></i>Role: <strong>@ViewBag.UserRole</strong></p>
+                                @if (!string.IsNullOrEmpty((string)ViewBag.TeamName))
+                                {
+                                    <p><i class="bi bi-people me-2"></i>Team: <strong>@ViewBag.TeamName</strong></p>
+                                }
+                                @if ((string)ViewBag.UserRole == "Team Leader" && !string.IsNullOrEmpty((string)ViewBag.TeamInvitationCode))
+                                {
+                                    <p><i class="bi bi-key me-2"></i>Invitation Code: <strong>@ViewBag.TeamInvitationCode</strong></p>
+                                }
+                                <form asp-action="LogOut" method="post" style="display:inline;">
+                                    <button type="submit" class="btn-logout">
+                                        <i class="bi bi-box-arrow-right me-2"></i>Logout
+                                    </button>
+                                </form>
+                            </div>
+                            @if ((ViewBag.UserRole as string) == "Team Member" && string.IsNullOrEmpty((string)ViewBag.TeamName))
+                            {
+                                <div class="modern-card mb-3 p-3" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 1rem;">
+                                    <form asp-action="JoinTeam" method="post" class="d-flex align-items-center gap-2">
+                                        <label for="joinInvitationCode" class="form-label mb-0" style="font-weight:600; color:#b45309;">
+                                            <i class="bi bi-people me-2"></i>Join Team
+                                        </label>
+                                        <input type="text" id="joinInvitationCode" name="invitationCode" maxlength="5" class="form-control" placeholder="Invitation Code" style="max-width:140px;" required autofocus />
+                                        <button type="submit" class="btn btn-warning" style="font-weight:600;">
+                                            <i class="bi bi-box-arrow-in-right me-1"></i>Join
+                                        </button>
+                                    </form>
+                                    @if (TempData["JoinTeamError"] != null)
+                                    {
+                                        <div class="alert alert-danger mt-2 mb-0 py-1 px-2 text-center" style="font-size:0.95rem;">
+                                            @TempData["JoinTeamError"]
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-col">
+                    <div class="modern-card mb-4">
+                        <div class="card-header-modern">
+                            <h2><i class="bi bi-gear me-2"></i>Task Management</h2>
+                        </div>
+                        <div class="card-body-modern">
+                            <div class="task-actions">
+                                <form asp-action="DeleteComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString" class="d-inline w-100">
+                                    <a asp-action="Add" class="btn-action">
+                                        <i class="bi bi-plus-circle me-2"></i>Add New Task
+                                    </a>
+                                    <button type="submit" class="btn-action btn-danger">
+                                        <i class="bi bi-trash me-2"></i>Delete Completed
+                                    </button>
+                                    <a class="btn-action btn-success" href="https://calendar.google.com/calendar/u/0/r?pli=1" target="_blank">
+                                        <i class="bi bi-calendar-plus me-2"></i>Set Reminder
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-col">
+                    <div class="modern-card mb-4">
+                    <div class="card-header-modern">
+                        <h2><i class="bi bi-funnel me-2"></i>Filter</h2>
+                    </div>
+                    <div class="card-body-modern">
+                        <form asp-action="Filter" method="post" class="filter-form">
+                            <div class="row">
+                                <div class="col-6 filter-group">
+                                    <label><i class="bi bi-tags me-2"></i>Category</label>
+                                    <select name="filter" class="form-select"
+                                        asp-items="@(new SelectList(ViewBag.Categories,"categoryId","categoryName",ViewBag.Filters.categoryID))">
+                                        @if (ViewBag.Filters.categoryID == null || ViewBag.Filters.categoryID == "all") {
+                                            <option value="all" selected>All</option>
+                                        } else {
+                                            <option value="all">All</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="col-6 filter-group">
+                                    <label><i class="bi bi-calendar-event me-2"></i>Due Date</label>
+                                    <select name="filter" class="form-select"
+                                        asp-items="@(new SelectList(ViewBag.DueFilters, "Key", "Value", ViewBag.Filters.dueDate))">
+                                        @if (ViewBag.Filters.dueDate == null || ViewBag.Filters.dueDate == "all") {
+                                            <option value="all" selected>All</option>
+                                        } else {
+                                            <option value="all">All</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 filter-group">
+                                    <label><i class="bi bi-check-circle me-2"></i>Status</label>
+                                    <select name="filter" class="form-select"
+                                        asp-items="@(new SelectList(ViewBag.Statuses, "statusId", "statusName", ViewBag.Filters.statusID))">
+                                        @if (ViewBag.Filters.statusID == null || ViewBag.Filters.statusID == "all") {
+                                            <option value="all" selected>All</option>
+                                        } else {
+                                            <option value="all">All</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="col-6 filter-group">
+                                    <label><i class="bi bi-clock me-2"></i>Due In</label>
+                                    <select name="filter" class="form-select">
+                                        @if (ViewBag.Filters.dueIn == null || ViewBag.Filters.dueIn == "all") {
+                                            <option value="all" selected>All</option>
+                                        } else {
+                                            <option value="all">All</option>
+                                        }
+                                        @if (ViewBag.Filters.dueIn == "5") {
+                                            <option value="5" selected>5 Days</option>
+                                        } else {
+                                            <option value="5">5 Days</option>
+                                        }
+                                        @if (ViewBag.Filters.dueIn == "15") {
+                                            <option value="15" selected>15 Days</option>
+                                        } else {
+                                            <option value="15">15 Days</option>
+                                        }
+                                        @if (ViewBag.Filters.dueIn == "30") {
+                                            <option value="30" selected>30 Days</option>
+                                        } else {
+                                            <option value="30">30 Days</option>
+                                        }
+                                        @if (ViewBag.Filters.dueIn == "90") {
+                                            <option value="90" selected>90 Days</option>
+                                        } else {
+                                            <option value="90">90 Days</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn-filter">
+                                    <i class="bi bi-search me-2"></i>Filter
+                                </button>
+                                <a asp-action="Index" asp-route-id="" class="btn-clear">
+                                    <i class="bi bi-x-circle me-2"></i>Clear
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                    </div>
+            <div class="dashboard-table-row">
+                <div class="dashboard-table-col">
+                    <div class="modern-card">
+                        <div class="card-header-modern">
+                            <div class="task-header">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-list-task me-3" style="font-size: 1.5rem;"></i>
+                                    <span>Tasks</span>
+                                </div>
+                                <div class="task-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-dot completed"></div>
+                                        <span>Completed</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-dot pending"></div>
+                                        <span>Pending</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-dot overdue"></div>
+                                        <span>Overdue</span>
+                                    </div>
+                                    <div class="task-count">
+                                        @ViewBag.CompletedCount/@ViewBag.TotalCount
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body-modern">
+                            <div class="table-responsive">
+                                <table class="table modern-table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <i class="bi bi-card-text me-2"></i>Name
+                                                    <a href="?sort=name_asc" class="sort-btn" title="Sort A-Z">
+                                                        <i class="bi bi-chevron-up"></i>
+                                                    </a>
+                                                    <a href="?sort=name_desc" class="sort-btn" title="Sort Z-A">
+                                                        <i class="bi bi-chevron-down"></i>
+                                                    </a>
+                                                </div>
+                                            </th>
+                                            <th><i class="bi bi-file-text me-2"></i>Description</th>
+                                            <th>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <i class="bi bi-tags me-2"></i>Category
+                                                    <a href="?sort=category_asc" class="sort-btn" title="Sort A-Z">
+                                                        <i class="bi bi-chevron-up"></i>
+                                                    </a>
+                                                    <a href="?sort=category_desc" class="sort-btn" title="Sort Z-A">
+                                                        <i class="bi bi-chevron-down"></i>
+                                                    </a>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <i class="bi bi-calendar-event me-2"></i>Due Date
+                                                    <a href="?sort=date_asc" class="sort-btn" title="Sort A-Z">
+                                                        <i class="bi bi-chevron-up"></i>
+                                                    </a>
+                                                    <a href="?sort=date_desc" class="sort-btn" title="Sort Z-A">
+                                                        <i class="bi bi-chevron-down"></i>
+                                                    </a>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <i class="bi bi-exclamation-triangle me-2"></i>Urgency
+                                                    <a href="?sort=urgency_asc" class="sort-btn">
+                                                        <i class="bi bi-chevron-up"></i>
+                                                    </a>
+                                                    <a href="?sort=urgency_desc" class="sort-btn">
+                                                        <i class="bi bi-chevron-down"></i>
+                                                    </a>
+                                                </div>
+                                            </th>
+                                            <th><i class="bi bi-check-circle me-2"></i>Status</th>
+                                            <th><i class="bi bi-person me-2"></i>Assigned To</th>
+                                            <th><i class="bi bi-gear me-2"></i>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach(Todo task in Model)
+                                        {
+                                            string rowClass = "";
+                                            if (task.Status.statusId.ToLower() == "completed")
+                                            {
+                                                rowClass = "table-success";
+                                            }
+                                            else if (task.Status.statusId.ToLower() == "pending")
+                                            {
+                                                if (task.dueDate.HasValue && task.dueDate.Value < DateTime.Now)
+                                                {
+                                                    rowClass = "table-danger";
+                                                }
+                                                else if (task.dueDate.HasValue && task.dueDate.Value >= DateTime.Now)
+                                                {
+                                                    rowClass = "table-warning";
+                                                }
+                                            }
+                                            <tr class="@rowClass">
+                                                <td><strong>@task.todName</strong></td>
+                                                <td>@task.todDescription</td>
+                                                <td>
+                                                    <span class="badge bg-primary">@task.Category.categoryName</span>
+                                                </td>
+                                                <td>
+                                                    @if (task.dueDate.HasValue)
+                                                    {
+                                                        @task.dueDate.Value.ToString("MM/dd/yyyy")
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-muted">No due date</span>
+                                                    }
+                                                </td>
+                                                <td>
+                                                    @if (task.urgency == "Very Urgent")
+                                                    {
+                                                        <span class="badge bg-danger">@task.urgency</span>
+                                                    }
+                                                    else if (task.urgency == "Urgent")
+                                                    {
+                                                        <span class="badge bg-warning">@task.urgency</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="badge bg-info">@task.urgency</span>
+                                                    }
+                                                </td>
+                                                <td>
+                                                    @task.Status.statusName
+                                                    @if (task.Status.statusId.ToLower() == "pending" && task.dueDate.HasValue)
+                                                    {
+                                                        var daysLeft = (task.dueDate.Value.Date - DateTime.Now.Date).TotalDays;
+                                                        if (daysLeft >= 0 && daysLeft < 5)
+                                                        {
+                                                            <span style="color:red; font-weight:bold;"> (Remaining: @daysLeft days)</span>
+                                                        }
+                                                        else if (daysLeft >= 5 && daysLeft <= 14)
+                                                        {
+                                                            <span> (Remaining: @daysLeft days)</span>
+                                                        }
+                                                    }
+                                                </td>
+                                                <td>
+                                                    @if (task.User != null)
+                                                    {
+                                                        <div>
+                                                            <strong>@task.User.userName</strong>
+                                                            <br>
+                                                            <small class="text-muted">@task.User.userMail</small>
+                                                        </div>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-muted">Unassigned</span>
+                                                    }
+                                                </td>
+                                                <td>
+                                                    <form asp-action="DeleteTask" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">
+                                                        <button type="submit" class="btn-table btn-outline-danger" name="todId" value="@task.todId" title="Delete">
+                                                            <i class="bi bi-trash"></i>
+                                                        </button>
+                                                    </form>
+                                                    @if(task.Status.statusId == "pending")
+                                                    {
+                                                        <form asp-action="MarkComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">
+                                                            <button type="submit" class="btn-table btn-info" name="todId" value="@task.todId" title="Mark as Completed">
+                                                                <i class="bi bi-check-lg"></i>
+                                                            </button>
+                                                        </form>
+                                                    }
+                                                    else if(task.Status.statusId == "completed")
+                                                    {
+                                                        <form asp-action="Unmark" method="post" asp-route-id="@ViewBag.Filters.FilterString" style="display:inline;">
+                                                            <button type="submit" class="btn-table btn-warning" name="todId" value="@task.todId" title="Mark as Pending">
+                                                                <i class="bi bi-arrow-counterclockwise"></i>
+                                                            </button>
+                                                        </form>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+        else
+        {
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="modern-card">
+                        <div class="card-header-modern">
+                            <h2><i class="bi bi-person-circle me-2"></i>User Management</h2>
+                        </div>
+                        <div class="card-body-modern">
+                            <form asp-action="LogIn" method="post" class="login-form">
+                                <h2>Login</h2>
+                                <p>Please fill out the form:</p>
+                                <div class="form-group-login">
+                                    <label for="mail"><i class="bi bi-envelope me-2"></i>Email:</label>
+                                    <input type="email" id="mail" name="mail" placeholder="ex@gmail.com" required>
+                                </div>
+                                <div class="form-group-login">
+                                    <label for="password"><i class="bi bi-lock me-2"></i>Password:</label>
+                                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn-login">
+                                        <i class="bi bi-box-arrow-in-right me-2"></i>Login
+                                    </button>
+                                    <a asp-action="SignIn" class="btn-signup">
+                                        <i class="bi bi-person-plus me-2"></i>Sign Up
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -3,78 +3,275 @@
     var userRole = Context.Session.GetString("userRole");
 }
 
-<h2 style="text-align: center; margin-bottom: 20px;">New Task</h2>
+<style>
+    .add-task-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .modern-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        border-radius: 2rem;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .modern-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .card-header-modern {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .card-header-modern::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+    }
+    
+    .card-header-modern h2 {
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+    }
+    
+    .form-modern {
+        padding: 2.5rem;
+    }
+    
+    .form-group-modern {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-label-modern {
+        font-weight: 500;
+        color: #374151;
+        margin-bottom: 0.5rem;
+        display: block;
+        font-size: 0.95rem;
+    }
+    
+    .form-control-modern {
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background: #fafafa;
+    }
+    
+    .form-control-modern:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        outline: none;
+        background: white;
+    }
+    
+    .form-select-modern {
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background: #fafafa;
+        cursor: pointer;
+    }
+    
+    .form-select-modern:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        outline: none;
+        background: white;
+    }
+    
+    .btn-modern {
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        font-weight: 500;
+        border: none;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    
+    .btn-primary-modern {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+    }
+    
+    .btn-primary-modern:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        color: white;
+    }
+    
+    .btn-secondary-modern {
+        background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+        color: white;
+    }
+    
+    .btn-secondary-modern:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+        color: white;
+    }
+    
+    .validation-error {
+        color: #ef4444;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+        display: block;
+    }
+    
+    .icon-input {
+        position: relative;
+    }
+    
+    .icon-input i {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #9ca3af;
+        pointer-events: none;
+    }
+    
+    @@media (max-width: 768px) {
+        .add-task-container {
+            padding: 1rem;
+        }
+        
+        .form-modern {
+            padding: 1.5rem;
+        }
+        
+        .card-header-modern {
+            padding: 1.5rem;
+        }
+        
+        .card-header-modern h2 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
 
-<div class="row" style="width: 50%; margin: 40px auto; align-items: center; background: rgba(255,255,255,0.25); border-radius: 20px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); padding: 32px 24px;">
-    <form asp-action="Add" method="post">
-        <div class="row">
-            <div class="mb-2 col-6">
-                <label asp-for="todName" class="form-label">Name</label>
-                <span asp-validation-for="todName" class="text-danger" style="margin-left:8px; font-size:0.95em;"></span>
-                <input asp-for="todName" class="form-control" maxlength="15" minlength="3" />
-            </div>
-            <div class="mb-3 col-6">
-                <label asp-for="todDescription" class="form-label">Description</label>
-                <span asp-validation-for="todDescription" class="text-danger" style="margin-left:8px; font-size:0.95em;"></span>
-                <input asp-for="todDescription" class="form-control" />
-            </div>
+<div class="add-task-container">
+    <div class="modern-card">
+        <div class="card-header-modern">
+            <h2><i class="bi bi-plus-circle me-2"></i>New Task</h2>
         </div>
-        <div class="row">
-            @if (userRole == "Team Member")
-            {
-                <div class="mb-3 col-6">
-                    <label asp-for="categoryId" class="form-label">Category</label>
-                    <span asp-validation-for="categoryId" class="text-danger" style="margin-left:8px; font-size:0.95em;"></span>
-                    <select asp-for="categoryId" class="form-select">
-                        <option value="">Select a Category</option>
-                        @foreach (var cat in (List<tod.Models.Category>)ViewBag.Categories)
-                        {
-                            if (cat.categoryId != "work")
+        <div class="form-modern">
+            <form asp-action="Add" method="post">
+                <div class="row">
+                    <div class="col-md-6 form-group-modern">
+                        <label asp-for="todName" class="form-label-modern">
+                            <i class="bi bi-card-text me-2"></i>Task Name
+                        </label>
+                        <span asp-validation-for="todName" class="validation-error"></span>
+                        <input asp-for="todName" class="form-control form-control-modern" maxlength="15" minlength="3" placeholder="Enter task name..." />
+                    </div>
+                    <div class="col-md-6 form-group-modern">
+                        <label asp-for="todDescription" class="form-label-modern">
+                            <i class="bi bi-file-text me-2"></i>Description
+                        </label>
+                        <span asp-validation-for="todDescription" class="validation-error"></span>
+                        <input asp-for="todDescription" class="form-control form-control-modern" placeholder="Enter description..." />
+                    </div>
+                </div>
+                <div class="row">
+                    @if (userRole == "Team Member")
+                    {
+                        <div class="col-md-6 form-group-modern">
+                            <label asp-for="categoryId" class="form-label-modern">
+                                <i class="bi bi-tags me-2"></i>Category
+                            </label>
+                            <span asp-validation-for="categoryId" class="validation-error"></span>
+                            <select asp-for="categoryId" class="form-select form-select-modern">
+                                <option value="">Select a Category</option>
+                                @foreach (var cat in (List<tod.Models.Category>)ViewBag.Categories)
+                                {
+                                    if (cat.categoryId != "work")
+                                    {
+                                        <option value="@cat.categoryId">@cat.categoryName</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                    }
+                    @* Team Leader ise kategori alanı hiç gösterilmesin *@
+                    <input type="hidden" name="categoryId" value="work" />
+                    <div class="col-md-6 form-group-modern">
+                        <label asp-for="statusId" class="form-label-modern">
+                            <i class="bi bi-check-circle me-2"></i>Status
+                        </label>
+                        <span asp-validation-for="statusId" class="validation-error"></span>
+                        <select asp-for="statusId" class="form-select form-select-modern" asp-items="@(new SelectList(ViewBag.Statuses, "statusId", "statusName"))">
+                            <option value="">Select a Status</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group-modern">
+                    <label asp-for="dueDate" class="form-label-modern">
+                        <i class="bi bi-calendar-event me-2"></i>Due Date
+                    </label>
+                    <span asp-validation-for="dueDate" class="validation-error"></span>
+                    <input asp-for="dueDate" class="form-control form-control-modern" type="date" />
+                </div>
+                @if (ViewBag.TeamMembers != null && ((List<tod.Models.User>)ViewBag.TeamMembers).Count > 0)
+                {
+                    <div class="form-group-modern">
+                        <label class="form-label-modern">
+                            <i class="bi bi-person-plus me-2"></i>Assign To
+                        </label>
+                        <select class="form-select form-select-modern" name="assignedUserId">
+                            <option value="">Select a User</option>
+                            @foreach (var member in (List<tod.Models.User>)ViewBag.TeamMembers)
                             {
-                                <option value="@cat.categoryId">@cat.categoryName</option>
+                                <option value="@member.userId">@member.userName (@member.userMail)</option>
                             }
-                        }
+                        </select>
+                    </div>
+                }
+                <div class="form-group-modern">
+                    <label class="form-label-modern" for="urgency">
+                        <i class="bi bi-exclamation-triangle me-2"></i>Urgency
+                    </label>
+                    <select class="form-select form-select-modern" id="urgency" name="urgency" required>
+                        <option value="">Select Urgency</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Urgent">Urgent</option>
+                        <option value="Very Urgent">Very Urgent</option>
                     </select>
                 </div>
-            }
-            @* Team Leader ise kategori alanı hiç gösterilmesin *@
-            <input type="hidden" name="categoryId" value="work" />
-            <div class="mb-3 col-6">
-                <label asp-for="statusId" class="form-label">Status</label>
-                <span asp-validation-for="statusId" class="text-danger" style="margin-left:8px; font-size:0.95em;"></span>
-                <select asp-for="statusId" class="form-select" asp-items="@(new SelectList(ViewBag.Statuses, "statusId", "statusName"))">
-                    <option value="">Select a Status</option>
-                </select>
-            </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-modern btn-primary-modern me-3">
+                        <i class="bi bi-check-lg me-2"></i>Add Task
+                    </button>
+                    <a asp-action="Index" class="btn btn-modern btn-secondary-modern">
+                        <i class="bi bi-arrow-left me-2"></i>Cancel
+                    </a>
+                </div>
+            </form>
         </div>
-        <div class="mb-3">
-            <label asp-for="dueDate" class="form-label">Due Date</label>
-            <span asp-validation-for="dueDate" class="text-danger" style="margin-left:8px; font-size:0.95em;"></span>
-            <input asp-for="dueDate" class="form-control" type="date" />
-        </div>
-        @if (ViewBag.TeamMembers != null && ((List<tod.Models.User>)ViewBag.TeamMembers).Count > 0)
-        {
-            <div class="mb-3">
-                <label class="form-label">Assign To</label>
-                <select class="form-select" name="assignedUserId">
-                    <option value="">Select a User</option>
-                    @foreach (var member in (List<tod.Models.User>)ViewBag.TeamMembers)
-                    {
-                        <option value="@member.userId">@member.userName (@member.userMail)</option>
-                    }
-                </select>
-            </div>
-        }
-        <div class="mb-3">
-            <label class="form-label" for="urgency">Urgency</label>
-                <select class="form-control" id="urgency" name="urgency" required>
-                  <option value="">Select Urgency</option>
-                  <option value="Normal">Normal</option>
-                  <option value="Urgent">Urgent</option>
-                  <option value="Very Urgent">Very Urgent</option>
-                </select>
-        </div>
-        <button type="submit" class="btn btn-info">Add</button>
-        <a asp-action="Index" class="btn btn-warning">Cancel</a>
-    </form>
+    </div>
 </div>

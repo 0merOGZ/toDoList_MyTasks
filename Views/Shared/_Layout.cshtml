@@ -9,42 +9,151 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/tod.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .bg-blur {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: -1;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            opacity: 0.1;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .modern-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+            border-radius: 0 0 2rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .modern-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #fff, #f8f9ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            letter-spacing: -0.02em;
+        }
+        
+        .logo-icon {
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+            animation: pulse 2s infinite;
+        }
+        
+        @@keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 300;
+            margin-top: 0.5rem;
+        }
+        
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            color: white;
+        }
+        
+        .nav-btn.active {
+            background: rgba(255, 255, 255, 0.9);
+            color: #667eea;
+        }
+        
+        .container-fluid {
+            padding: 0;
+        }
+        
+        main {
+            padding: 2rem 1rem;
+        }
+        
+        @@media (max-width: 768px) {
+            .logo-title {
+                font-size: 2.5rem;
+            }
+            
+            .nav-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <style>
-    .bg-blur {
-        position: fixed;
-        top: 0; left: 0; width: 100vw; height: 100vh;
-        z-index: -1;
-        background: url('/img/backg.jpg') center center/cover no-repeat;
-        filter: blur(12px); 
-        opacity: 0.7;     
-    } 
-    </style>
     <div class="bg-blur"></div>
     <div class="container-fluid">
-        <header class="bg-primary text-white text-center py-4" style="background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 0 0 1.5rem 1.5rem;">
-            <div class="d-flex flex-column align-items-center">
-                <span class="display-3 mb-2" style="letter-spacing: 0.1em; font-weight: bold; font-size:5.5em; text-shadow: 2px 2px 8px #00000033;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" class="bi bi-list-check me-2" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M10.854 11.146a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708l.646.647 1.646-1.647a.5.5 0 0 1 .708 0z"/>
-                        <path fill-rule="evenodd" d="M1.5 3.5A.5.5 0 0 1 2 3h12a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5zm0 4A.5.5 0 0 1 2 7h12a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5zm0 4A.5.5 0 0 1 2 11h5a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-                    MyTasks
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" class="bi bi-list-check ms-2" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M10.854 11.146a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708l.646.647 1.646-1.647a.5.5 0 0 1 .708 0z"/>
-                        <path fill-rule="evenodd" d="M1.5 3.5A.5.5 0 0 1 2 3h12a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5zm0 4A.5.5 0 0 1 2 7h12a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5zm0 4A.5.5 0 0 1 2 11h5a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-                </span>
-                <span class="fs-5 fst-italic" style="opacity:0.85;">Your personal to do list & task assign
-                    (an Internship prototype by Ömer Yasir OĞUZ)</span>
-                @if (ViewBag.IsLoggedIn ?? false)
-                {
-                    <nav class="mt-3">
-                        <a class="btn btn-outline-light me-2" asp-controller="Home" asp-action="Index">Home</a>
-                        <a class="btn btn-outline-warning" asp-controller="Home" asp-action="Archive">Archive</a>
-                    </nav>
-                }
+        <header class="modern-header text-white text-center py-5">
+            <div class="header-content">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex align-items-center mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="white" class="logo-icon me-3" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.854 11.146a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708l.646.647 1.646-1.647a.5.5 0 0 1 .708 0z"/>
+                            <path fill-rule="evenodd" d="M1.5 3.5A.5.5 0 0 1 2 3h12a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5zm0 4A.5.5 0 0 1 2 7h12a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5zm0 4A.5.5 0 0 1 2 11h5a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        <span class="logo-title">MyTasks</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="white" class="logo-icon ms-3" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.854 11.146a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708l.646.647 1.646-1.647a.5.5 0 0 1 .708 0z"/>
+                            <path fill-rule="evenodd" d="M1.5 3.5A.5.5 0 0 1 2 3h12a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5zm0 4A.5.5 0 0 1 2 7h12a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5zm0 4A.5.5 0 0 1 2 11h5a.5.5 0 0 1 0 1H2a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </div>
+                    <div class="subtitle">Your personal to do list & task assign</div>
+                    <div class="subtitle" style="font-size: 0.9rem; opacity: 0.7;">(an Internship prototype by Ömer Yasir OĞUZ)</div>
+                    @if (ViewBag.IsLoggedIn ?? false)
+                    {
+                        <nav class="mt-4">
+                            <a class="nav-btn me-3" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-door me-2"></i>Home
+                            </a>
+                            <a class="nav-btn" asp-controller="Home" asp-action="Archive">
+                                <i class="bi bi-archive me-2"></i>Archive
+                            </a>
+                        </nav>
+                    }
+                </div>
             </div>
         </header>
         <main>
